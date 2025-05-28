@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Endangered Species of Australia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2f5d3a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .species-info {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .species-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #2f5d3a;
+        }
+
+        .species-info p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        .species-info button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .species-info button:hover {
+            background-color: #45a049;
+        }
+
+        .species-info div {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .species-info.active div {
+            display: block;
+        }
+
+        .species-info button:focus {
+            outline: none;
+        }
+
+        /* Image Styling */
+        .species-info img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Endangered Species of Australia</h1>
+    </header>
+
+    <!-- Northern Hairy-nosed Wombat -->
+    <section class="species-info" id="northern-hairy-nosed-wombat">
+        <h2>Northern Hairy-nosed Wombat</h2>
+        <button onclick="toggleVisibility('northern-hairy-nosed-wombat')" aria-expanded="false" aria-controls="northern-hairy-nosed-wombat-details">View Details</button>
+        <div id="northern-hairy-nosed-wombat-details">
+            <img src="endangered/australia/northern-hairy-nosed-wombat.jpg" alt="Northern Hairy-nosed Wombat" loading="lazy">
+            <p><strong>Scientific Name:</strong> Lasiorhinus krefftii</p>
+            <p><strong>Habitat:</strong> Grasslands</p>
+            <p><strong>Current Population:</strong> ~315</p>
+            <p><strong>Subregion:</strong> Queensland</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, predation by invasive species</p>
+        </div>
+    </section>
+
+    <!-- Leadbeater’s Possum -->
+    <section class="species-info" id="leadbeaters-possum">
+        <h2>Leadbeater’s Possum</h2>
+        <button onclick="toggleVisibility('leadbeaters-possum')" aria-expanded="false" aria-controls="leadbeaters-possum-details">View Details</button>
+        <div id="leadbeaters-possum-details">
+            <img src="endangered/australia/leadbeaters-possum.jpg" alt="Leadbeater’s Possum" loading="lazy">
+            <p><strong>Scientific Name:</strong> Gymnobelideus leadbeateri</p>
+            <p><strong>Habitat:</strong> Mountain ash forests</p>
+            <p><strong>Current Population:</strong> <1,500</p>
+            <p><strong>Subregion:</strong> Central Highlands of Victoria</p>
+            <p><strong>Cause of Endangerment:</strong> Logging, bushfires</p>
+        </div>
+    </section>
+
+    <!-- Regent Honeyeater -->
+    <section class="species-info" id="regent-honeyeater">
+        <h2>Regent Honeyeater</h2>
+        <button onclick="toggleVisibility('regent-honeyeater')" aria-expanded="false" aria-controls="regent-honeyeater-details">View Details</button>
+        <div id="regent-honeyeater-details">
+            <img src="endangered/australia/regent-honeyeater.jpg" alt="Regent Honeyeater" loading="lazy">
+            <p><strong>Scientific Name:</strong> Anthochaera phrygia</p>
+            <p><strong>Habitat:</strong> Woodland</p>
+            <p><strong>Current Population:</strong> ~250</p>
+            <p><strong>Subregion:</strong> Southeastern Australia</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat clearing, food scarcity</p>
+        </div>
+    </section>
+
+    <!-- Orange-bellied Parrot -->
+    <section class="species-info" id="orange-bellied-parrot">
+        <h2>Orange-bellied Parrot</h2>
+        <button onclick="toggleVisibility('orange-bellied-parrot')" aria-expanded="false" aria-controls="orange-bellied-parrot-details">View Details</button>
+        <div id="orange-bellied-parrot-details">
+            <img src="endangered/australia/orange-bellied-parrot.jpg" alt="Orange-bellied Parrot" loading="lazy">
+            <p><strong>Scientific Name:</strong> Neophema chrysogaster</p>
+            <p><strong>Habitat:</strong> Coastal grasslands, salt marshes</p>
+            <p><strong>Current Population:</strong> <70 wild individuals</p>
+            <p><strong>Subregion:</strong> Tasmania and coastal Victoria</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat degradation, introduced predators</p>
+        </div>
+    </section>
+
+    <!-- Greater Bilby -->
+    <section class="species-info" id="greater-bilby">
+        <h2>Greater Bilby</h2>
+        <button onclick="toggleVisibility('greater-bilby')" aria-expanded="false" aria-controls="greater-bilby-details">View Details</button>
+        <div id="greater-bilby-details">
+            <img src="endangered/australia/greater-bilby.jpg" alt="Greater Bilby" loading="lazy">
+            <p><strong>Scientific Name:</strong> Macrotis lagotis</p>
+            <p><strong>Habitat:</strong> Arid and semi-arid areas</p>
+            <p><strong>Current Population:</strong> Around 10,000 individuals</p>
+            <p><strong>Subregion:</strong> Central and Western Australia</p>
+            <p><strong>Cause of Endangerment:</strong> Predation by foxes and cats, habitat destruction</p>
+        </div>
+    </section>
+
+    <!-- Western Swamp Tortoise -->
+    <section class="species-info" id="western-swamp-tortoise">
+        <h2>Western Swamp Tortoise</h2>
+        <button onclick="toggleVisibility('western-swamp-tortoise')" aria-expanded="false" aria-controls="western-swamp-tortoise-details">View Details</button>
+        <div id="western-swamp-tortoise-details">
+            <img src="endangered/australia/western-swamp-tortoise.jpg" alt="Western Swamp Tortoise" loading="lazy">
+            <p><strong>Scientific Name:</strong> Pseudemydura umbrina</p>
+            <p><strong>Habitat:</strong> Seasonal swamps</p>
+            <p><strong>Current Population:</strong> Around 200 individuals</p>
+            <p><strong>Subregion:</strong> Western Australia</p>
+            <p><strong>Cause of Endangerment:</strong> Land clearing, altered hydrology</p>
+        </div>
+    </section>
+
+    <!-- Eastern Curlew -->
+    <section class="species-info" id="eastern-curlew">
+        <h2>Eastern Curlew</h2>
+        <button onclick="toggleVisibility('eastern-curlew')" aria-expanded="false" aria-controls="eastern-curlew-details">View Details</button>
+        <div id="eastern-curlew-details">
+            <img src="endangered/australia/eastern-curlew.jpg" alt="Eastern Curlew" loading="lazy">
+            <p><strong>Scientific Name:</strong> Numenius madagascariensis</p>
+            <p><strong>Habitat:</strong> Coastal mudflats, wetlands</p>
+            <p><strong>Current Population:</strong> ~35,000</p>
+            <p><strong>Subregion:</strong> East coast of Australia</p>
+            <p><strong>Cause of Endangerment:</strong> Loss of wetland stopover sites during migration</p>
+        </div>
+    </section>
+
+    <!-- Tasmanian Devil -->
+    <section class="species-info" id="tasmanian-devil">
+        <h2>Tasmanian Devil</h2>
+        <button onclick="toggleVisibility('tasmanian-devil')" aria-expanded="false" aria-controls="tasmanian-devil-details">View Details</button>
+        <div id="tasmanian-devil-details">
+            <img src="endangered/australia/tasmanian-devil.jpg" alt="Tasmanian Devil" loading="lazy">
+            <p><strong>Scientific Name:</strong> Sarcophilus harrisii</p>
+            <p><strong>Habitat:</strong> Forests, woodlands</p>
+            <p><strong>Current Population:</strong> ~25,000</p>
+            <p><strong>Subregion:</strong> Tasmania</p>
+            <p><strong>Cause of Endangerment:</strong> Contagious facial tumor disease</p>
+        </div>
+    </section>
+
+    <!-- Northern Corroboree Frog -->
+    <section class="species-info" id="northern-corroboree-frog">
+        <h2>Northern Corroboree Frog</h2>
+        <button onclick="toggleVisibility('northern-corroboree-frog')" aria-expanded="false" aria-controls="northern-corroboree-frog-details">View Details</button>
+        <div id="northern-corroboree-frog-details">
+            <img src="endangered/australia/northern-corroboree-frog.jpg" alt="Northern Corroboree Frog" loading="lazy">
+            <p><strong>Scientific Name:</strong> Pseudophryne pengilleyi</p>
+            <p><strong>Habitat:</strong> Alpine and subalpine bogs</p>
+            <p><strong>Current Population:</strong> Fewer than 100 wild individuals</p>
+            <p><strong>Subregion:</strong> ACT and NSW</p>
+            <p><strong>Cause of Endangerment:</strong> Chytrid fungus, habitat loss</p>
+        </div>
+    </section>
+
+    <!-- Gouldian Finch -->
+    <section class="species-info" id="gouldian-finch">
+        <h2>Gouldian Finch</h2>
+        <button onclick="toggleVisibility('gouldian-finch')" aria-expanded="false" aria-controls="gouldian-finch-details">View Details</button>
+        <div id="gouldian-finch-details">
+            <img src="endangered/australia/gouldian-finch.jpg" alt="Gouldian Finch" loading="lazy">
+            <p><strong>Scientific Name:</strong> Erythrura gouldiae</p>
+            <p><strong>Habitat:</strong> Tropical savannas</p>
+            <p><strong>Current Population:</strong> ~2,500</p>
+            <p><strong>Subregion:</strong> Northern Australia</p>
+            <p><strong>Cause of Endangerment:</strong> Fire regimes, grazing pressure</p>
+        </div>
+    </section>
+
+    <!-- Mallee Emu-wren -->
+    <section class="species-info" id="mallee-emu-wren">
+        <h2>Mallee Emu-wren</h2>
+        <button onclick="toggleVisibility('mallee-emu-wren')" aria-expanded="false" aria-controls="mallee-emu-wren-details">View Details</button>
+        <div id="mallee-emu-wren-details">
+            <img src="endangered/australia/mallee-emu-wren.jpg" alt="Mallee Emu-wren" loading="lazy">
+            <p><strong>Scientific Name:</strong> Stipiturus mallee</p>
+            <p><strong>Habitat:</strong> Mallee scrublands</p>
+            <p><strong>Current Population:</strong> ~5,000</p>
+            <p><strong>Subregion:</strong> Victoria and South Australia</p>
+            <p><strong>Cause of Endangerment:</strong> Wildfires, land clearing</p>
+        </div>
+    </section>
+
+    <!-- Spectacled Flying Fox -->
+    <section class="species-info" id="spectacled-flying-fox">
+        <h2>Spectacled Flying Fox</h2>
+        <button onclick="toggleVisibility('spectacled-flying-fox')" aria-expanded="false" aria-controls="spectacled-flying-fox-details">View Details</button>
+        <div id="spectacled-flying-fox-details">
+            <img src="endangered/australia/spectacled-flying-fox.jpg" alt="Spectacled Flying Fox" loading="lazy">
+            <p><strong>Scientific Name:</strong> Pteropus conspicillatus</p>
+            <p><strong>Habitat:</strong> Rainforests</p>
+            <p><strong>Current Population:</strong> ~75,000</p>
+            <p><strong>Subregion:</strong> Northeastern Queensland</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, heatwaves</p>
+        </div>
+    </section>
+
+    <!-- Eastern Bristlebird -->
+    <section class="species-info" id="eastern-bristlebird">
+        <h2>Eastern Bristlebird</h2>
+        <button onclick="toggleVisibility('eastern-bristlebird')" aria-expanded="false" aria-controls="eastern-bristlebird-details">View Details</button>
+        <div id="eastern-bristlebird-details">
+            <img src="endangered/australia/eastern-bristlebird.jpg" alt="Eastern Bristlebird" loading="lazy">
+            <p><strong>Scientific Name:</strong> Dasyornis brachypterus</p>
+            <p><strong>Habitat:</strong> Heathlands</p>
+            <p><strong>Current Population:</strong> ~2,500</p>
+            <p><strong>Subregion:</strong> Southeast Australia</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, inappropriate fire regimes</p>
+        </div>
+    </section>
+
+    <!-- Central Rock-rat -->
+    <section class="species-info" id="central-rock-rat">
+        <h2>Central Rock-rat</h2>
+        <button onclick="toggleVisibility('central-rock-rat')" aria-expanded="false" aria-controls="central-rock-rat-details">View Details</button>
+        <div id="central-rock-rat-details">
+            <img src="endangered/australia/central-rock-rat.jpg" alt="Central Rock-rat" loading="lazy">
+            <p><strong>Scientific Name:</strong> Zyzomys pedunculatus</p>
+            <p><strong>Habitat:</strong> Rocky outcrops</p>
+            <p><strong>Current Population:</strong> <100</p>
+            <p><strong>Subregion:</strong> Central Australia</p>
+            <p><strong>Cause of Endangerment:</strong> Predation, climate change</p>
+        </div>
+    </section>
+
+    <!-- Woylie -->
+    <section class="species-info" id="woylie">
+        <h2>Woylie (Brush-tailed Bettong)</h2>
+        <button onclick="toggleVisibility('woylie')" aria-expanded="false" aria-controls="woylie-details">View Details</button>
+        <div id="woylie-details">
+            <img src="endangered/australia/woylie.jpg" alt="Woylie" loading="lazy">
+            <p><strong>Scientific Name:</strong> Bettongia penicillata</p>
+            <p><strong>Habitat:</strong> Woodlands and shrublands</p>
+            <p><strong>Current Population:</strong> ~15,000</p>
+            <p><strong>Subregion:</strong> Southwest Western Australia</p>
+            <p><strong>Cause of Endangerment:</strong> Disease, fox predation</p>
+        </div>
+    </section>
+
+<script>
+    function goBack() {
+        if (window.history.length > 1) {
+            window.history.back();
+        } else {
+            window.location.href = 'index.html';
+        }
+    }
+
+    function toggleVisibility(id) {
+        const section = document.getElementById(id);
+        const button = section.querySelector('button');
+        section.classList.toggle('active');
+        button.setAttribute('aria-expanded', section.classList.contains('active'));
+    }
+</script>
+<div style="margin: 20px;">
+    <button onclick="goBack()" style="padding: 10px 20px; background-color: #2f5d3a; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        ← Back
+    </button>
+</div>
+</body>
+
+</html>

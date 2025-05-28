@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Endangered Species of South America</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2f5d3a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .species-info {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .species-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #2f5d3a;
+        }
+
+        .species-info p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        .species-info button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .species-info button:hover {
+            background-color: #45a049;
+        }
+
+        .species-info div {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .species-info.active div {
+            display: block;
+        }
+
+        .species-info button:focus {
+            outline: none;
+        }
+
+        /* Image Styling */
+        .species-info img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Endangered Species of South America</h1>
+    </header>
+
+    <!-- Jaguar -->
+    <section class="species-info" id="jaguar">
+        <h2>Jaguar</h2>
+        <button onclick="toggleVisibility('jaguar')" aria-expanded="false" aria-controls="jaguar-details">View Details</button>
+        <div id="jaguar-details">
+            <img src="endangered/south-america/jaguar.jpg" alt="Jaguar" loading="lazy">
+            <p><strong>Scientific Name:</strong> Panthera onca</p>
+            <p><strong>Habitat:</strong> Rainforests, grasslands, and scrublands</p>
+            <p><strong>Current Population:</strong> Fewer than 20,000 individuals</p>
+            <p><strong>Subregion:</strong> South and Central America</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, poaching, and human-wildlife conflict</p>
+        </div>
+    </section>
+
+    <!-- Giant River Otter -->
+    <section class="species-info" id="giant-river-otter">
+        <h2>Giant River Otter</h2>
+        <button onclick="toggleVisibility('giant-river-otter')" aria-expanded="false" aria-controls="giant-river-otter-details">View Details</button>
+        <div id="giant-river-otter-details">
+            <img src="endangered/south-america/giant-river-otter.jpg" alt="Giant River Otter" loading="lazy">
+            <p><strong>Scientific Name:</strong> Pteronura brasiliensis</p>
+            <p><strong>Habitat:</strong> Amazon and Orinoco River basins</p>
+            <p><strong>Current Population:</strong> Approximately 5,000 individuals</p>
+            <p><strong>Subregion:</strong> Amazon Basin, Brazil</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat destruction, pollution, and hunting</p>
+        </div>
+    </section>
+
+    <!-- Andean Condor -->
+    <section class="species-info" id="andean-condor">
+        <h2>Andean Condor</h2>
+        <button onclick="toggleVisibility('andean-condor')" aria-expanded="false" aria-controls="andean-condor-details">View Details</button>
+        <div id="andean-condor-details">
+            <img src="endangered/south-america/andean-condor.jpg" alt="Andean Condor" loading="lazy">
+            <p><strong>Scientific Name:</strong> Vultur gryphus</p>
+            <p><strong>Habitat:</strong> Mountainous regions, particularly the Andes</p>
+            <p><strong>Current Population:</strong> Around 6,700 individuals</p>
+            <p><strong>Subregion:</strong> Andes Mountains, South America</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, hunting, and poisoning</p>
+        </div>
+    </section>
+
+    <!-- Spix’s Macaw -->
+    <section class="species-info" id="spixs-macaw">
+        <h2>Spix’s Macaw (Little Blue Macaw)</h2>
+        <button onclick="toggleVisibility('spixs-macaw')" aria-expanded="false" aria-controls="spixs-macaw-details">View Details</button>
+        <div id="spixs-macaw-details">
+            <img src="endangered/south-america/spixs-macaw.jpg" alt="Spix’s Macaw" loading="lazy">
+            <p><strong>Scientific Name:</strong> Cyanopsitta spixii</p>
+            <p><strong>Habitat:</strong> Brazilian rainforests and woodlands</p>
+            <p><strong>Current Population:</strong> Extinct in the wild, around 200 individuals in captivity</p>
+            <p><strong>Subregion:</strong> Brazil</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, poaching, and illegal trade</p>
+        </div>
+    </section>
+
+    <!-- Brazilian Tapir -->
+    <section class="species-info" id="brazilian-tapir">
+        <h2>Brazilian Tapir</h2>
+        <button onclick="toggleVisibility('brazilian-tapir')" aria-expanded="false" aria-controls="brazilian-tapir-details">View Details</button>
+        <div id="brazilian-tapir-details">
+            <img src="endangered/south-america/brazilian-tapir.jpg" alt="Brazilian Tapir" loading="lazy">
+            <p><strong>Scientific Name:</strong> Tapirus terrestris</p>
+            <p><strong>Habitat:</strong> Rainforests, wetlands, and lowland forests</p>
+            <p><strong>Current Population:</strong> Estimated to be around 10,000 individuals</p>
+            <p><strong>Subregion:</strong> Brazil, Bolivia, Ecuador, and other Amazon regions</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss and hunting</p>
+        </div>
+    </section>
+
+    <!-- South American Sea Lion -->
+    <section class="species-info" id="south-american-sea-lion">
+        <h2>South American Sea Lion</h2>
+        <button onclick="toggleVisibility('south-american-sea-lion')" aria-expanded="false" aria-controls="south-american-sea-lion-details">View Details</button>
+        <div id="south-american-sea-lion-details">
+            <img src="endangered/south-america/south-american-sea-lion.jpg" alt="South American Sea Lion" loading="lazy">
+            <p><strong>Scientific Name:</strong> Otaria flavescens</p>
+            <p><strong>Habitat:</strong> Coastal regions and islands</p>
+            <p><strong>Current Population:</strong> Over 200,000 individuals</p>
+            <p><strong>Subregion:</strong> Southern South America (Argentina, Chile, Uruguay)</p>
+            <p><strong>Cause of Endangerment:</strong> Hunting, habitat disturbance, and fishing net entanglements</p>
+        </div>
+    </section>
+
+    <!-- Golden Lion Tamarin -->
+    <section class="species-info" id="golden-lion-tamarin">
+        <h2>Golden Lion Tamarin</h2>
+        <button onclick="toggleVisibility('golden-lion-tamarin')" aria-expanded="false" aria-controls="golden-lion-tamarin-details">View Details</button>
+        <div id="golden-lion-tamarin-details">
+            <img src="endangered/south-america/golden-lion-tamarin.jpg" alt="Golden Lion Tamarin" loading="lazy">
+            <p><strong>Scientific Name:</strong> Leontopithecus rosalia</p>
+            <p><strong>Habitat:</strong> Tropical rainforests of Brazil</p>
+            <p><strong>Current Population:</strong> About 3,200 individuals</p>
+            <p><strong>Subregion:</strong> Brazil</p>
+            <p><strong>Cause of Endangerment:</strong> Deforestation, illegal pet trade, and habitat fragmentation</p>
+        </div>
+    </section>
+
+    <!-- Hyacinth Macaw -->
+    <section class="species-info" id="hyacinth-macaw">
+        <h2>Hyacinth Macaw</h2>
+        <button onclick="toggleVisibility('hyacinth-macaw')" aria-expanded="false" aria-controls="hyacinth-macaw-details">View Details</button>
+        <div id="hyacinth-macaw-details">
+            <img src="endangered/south-america/hyacinth-macaw.jpg" alt="Hyacinth Macaw" loading="lazy">
+            <p><strong>Scientific Name:</strong> Anodorhynchus hyacinthinus</p>
+            <p><strong>Habitat:</strong> Savannas, woodlands, and palm forests</p>
+            <p><strong>Current Population:</strong> Around 6,500 individuals</p>
+            <p><strong>Subregion:</strong> Brazil, Bolivia, Paraguay</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, illegal pet trade, and poaching</p>
+        </div>
+    </section>
+
+    <!-- Chacoan Peccary -->
+    <section class="species-info" id="chacoan-peccary">
+        <h2>Chacoan Peccary</h2>
+        <button onclick="toggleVisibility('chacoan-peccary')" aria-expanded="false" aria-controls="chacoan-peccary-details">View Details</button>
+        <div id="chacoan-peccary-details">
+            <img src="endangered/south-america/chacoan-peccary.jpg" alt="Chacoan Peccary" loading="lazy">
+            <p><strong>Scientific Name:</strong> Catagonus wagneri</p>
+            <p><strong>Habitat:</strong> Dry forests and scrublands</p>
+            <p><strong>Current Population:</strong> Around 1,000 individuals</p>
+            <p><strong>Subregion:</strong> Chaco region, Argentina, Paraguay, Bolivia</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss and hunting</p>
+        </div>
+    </section>
+
+    <!-- Pygmy Marmoset -->
+    <section class="species-info" id="pygmy-marmoset">
+        <h2>Pygmy Marmoset</h2>
+        <button onclick="toggleVisibility('pygmy-marmoset')" aria-expanded="false" aria-controls="pygmy-marmoset-details">View Details</button>
+        <div id="pygmy-marmoset-details">
+            <img src="endangered/south-america/pygmy-marmoset.jpg" alt="Pygmy Marmoset" loading="lazy">
+            <p><strong>Scientific Name:</strong> Cebuella pygmaea</p>
+            <p><strong>Habitat:</strong> Tropical rainforests, especially lowland areas</p>
+            <p><strong>Current Population:</strong> Unknown, but declining</p>
+            <p><strong>Subregion:</strong> Amazon Basin, Colombia, Brazil, Ecuador, Peru</p>
+            <p><strong>Cause of Endangerment:</strong> Deforestation and illegal pet trade</p>
+        </div>
+    </section>
+
+    <!-- Colombian Spider Monkey -->
+    <section class="species-info" id="colombian-spider-monkey">
+        <h2>Colombian Spider Monkey</h2>
+        <button onclick="toggleVisibility('colombian-spider-monkey')" aria-expanded="false" aria-controls="colombian-spider-monkey-details">View Details</button>
+        <div id="colombian-spider-monkey-details">
+            <img src="endangered/south-america/colombian-spider-monkey.jpg" alt="Colombian Spider Monkey" loading="lazy">
+            <p><strong>Scientific Name:</strong> Ateles fusciceps rufiventris</p>
+            <p><strong>Habitat:</strong> Lowland tropical forests</p>
+            <p><strong>Current Population:</strong> Less than 1,000 individuals</p>
+            <p><strong>Subregion:</strong> Colombia</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat destruction, hunting, and illegal pet trade</p>
+        </div>
+    </section>
+
+    <!-- Andean Bear -->
+    <section class="species-info" id="andean-bear">
+        <h2>Andean Bear</h2>
+        <button onclick="toggleVisibility('andean-bear')" aria-expanded="false" aria-controls="andean-bear-details">View Details</button>
+        <div id="andean-bear-details">
+            <img src="endangered/south-america/andean-bear.jpg" alt="Andean Bear" loading="lazy">
+            <p><strong>Scientific Name:</strong> Tremarctos ornatus</p>
+            <p><strong>Habitat:</strong> Mountainous cloud forests and paramo</p>
+            <p><strong>Current Population:</strong> Estimated around 2,000 individuals</p>
+            <p><strong>Subregion:</strong> Andes Mountains, South America</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss and hunting</p>
+        </div>
+    </section>
+
+    <!-- White-cheeked Pintail -->
+    <section class="species-info" id="white-cheeked-pintail">
+        <h2>White-cheeked Pintail</h2>
+        <button onclick="toggleVisibility('white-cheeked-pintail')" aria-expanded="false" aria-controls="white-cheeked-pintail-details">View Details</button>
+        <div id="white-cheeked-pintail-details">
+            <img src="endangered/south-america/white-cheeked-pintail.jpg" alt="White-cheeked Pintail" loading="lazy">
+            <p><strong>Scientific Name:</strong> Anas bahamensis</p>
+            <p><strong>Habitat:</strong> Wetlands and coastal areas</p>
+            <p><strong>Current Population:</strong> Vulnerable, population unknown</p>
+            <p><strong>Subregion:</strong> Coastal areas of South America (Argentina, Chile, Peru)</p>
+            <p><strong>Cause of Endangerment:</strong> Wetland destruction and climate change</p>
+        </div>
+    </section>
+
+    <!-- Peruvian Frog -->
+    <section class="species-info" id="peruvian-frog">
+        <h2>Peruvian Frog (Titicaca Water Frog)</h2>
+        <button onclick="toggleVisibility('peruvian-frog')" aria-expanded="false" aria-controls="peruvian-frog-details">View Details</button>
+        <div id="peruvian-frog-details">
+            <img src="endangered/south-america/peruvian-frog.jpg" alt="Peruvian Frog" loading="lazy">
+            <p><strong>Scientific Name:</strong> Telmatobius culeus</p>
+            <p><strong>Habitat:</strong> Mountainous lakes and streams</p>
+            <p><strong>Current Population:</strong> Fewer than 1,000 individuals</p>
+            <p><strong>Subregion:</strong> Peru</p>
+            <p><strong>Cause of Endangerment:</strong> Pollution, disease (chytridiomycosis), and habitat destruction</p>
+        </div>
+    </section>
+
+    <!-- Galapagos Penguin -->
+    <section class="species-info" id="galapagos-penguin">
+        <h2>Galapagos Penguin</h2>
+        <button onclick="toggleVisibility('galapagos-penguin')" aria-expanded="false" aria-controls="galapagos-penguin-details">View Details</button>
+        <div id="galapagos-penguin-details">
+            <img src="endangered/south-america/galapagos-penguin.jpg" alt="Galapagos Penguin" loading="lazy">
+            <p><strong>Scientific Name:</strong> Spheniscus mendiculus</p>
+            <p><strong>Habitat:</strong> Coastal areas and islands</p>
+            <p><strong>Current Population:</strong> Around 1,200 individuals</p>
+            <p><strong>Subregion:</strong> Galapagos Islands, Ecuador</p>
+            <p><strong>Cause of Endangerment:</strong> Climate change, overfishing, and oil pollution</p>
+        </div>
+    </section>
+
+<script>
+    function goBack() {
+        if (window.history.length > 1) {
+            window.history.back();
+        } else {
+            window.location.href = 'index.html';
+        }
+    }
+
+    function toggleVisibility(id) {
+        const section = document.getElementById(id);
+        const button = section.querySelector('button');
+        section.classList.toggle('active');
+        button.setAttribute('aria-expanded', section.classList.contains('active'));
+    }
+</script>
+<div style="margin: 20px;">
+    <button onclick="goBack()" style="padding: 10px 20px; background-color: #2f5d3a; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        ← Back
+    </button>
+</div>
+</body>
+
+</html>

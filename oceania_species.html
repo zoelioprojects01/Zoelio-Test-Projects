@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Endangered Species of Oceania</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2f5d3a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .species-info {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .species-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #2f5d3a;
+        }
+
+        .species-info p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        .species-info button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .species-info button:hover {
+            background-color: #45a049;
+        }
+
+        .species-info div {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .species-info.active div {
+            display: block;
+        }
+
+        .species-info button:focus {
+            outline: none;
+        }
+
+        /* Image Styling */
+        .species-info img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Endangered Species of Oceania</h1>
+    </header>
+
+    <!-- Lord Howe Island Stick Insect -->
+    <section class="species-info" id="lord-howe-stick-insect">
+        <h2>Lord Howe Island Stick Insect</h2>
+        <button onclick="toggleVisibility('lord-howe-stick-insect')" aria-expanded="false" aria-controls="lord-howe-stick-insect-details">View Details</button>
+        <div id="lord-howe-stick-insect-details">
+            <img src="endangered/oceania/lord-howe-stick-insect.jpg" alt="Lord Howe Island Stick Insect" loading="lazy">
+            <p><strong>Scientific Name:</strong> Dryococelus australis</p>
+            <p><strong>Habitat:</strong> Rainforests and scrublands</p>
+            <p><strong>Current Population:</strong> Around 30 individuals</p>
+            <p><strong>Subregion:</strong> Lord Howe Island, Australia</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, predation by introduced species</p>
+        </div>
+    </section>
+
+    <!-- Kakapo -->
+    <section class="species-info" id="kakapo">
+        <h2>Kakapo</h2>
+        <button onclick="toggleVisibility('kakapo')" aria-expanded="false" aria-controls="kakapo-details">View Details</button>
+        <div id="kakapo-details">
+            <img src="endangered/oceania/kakapo.jpg" alt="Kakapo" loading="lazy">
+            <p><strong>Scientific Name:</strong> Strigops habroptilus</p>
+            <p><strong>Habitat:</strong> Forests and scrublands</p>
+            <p><strong>Current Population:</strong> Around 250 individuals</p>
+            <p><strong>Subregion:</strong> New Zealand</p>
+            <p><strong>Cause of Endangerment:</strong> Predation by introduced species, habitat loss</p>
+        </div>
+    </section>
+
+    <!-- New Zealand Sea Lion -->
+    <section class="species-info" id="new-zealand-sea-lion">
+        <h2>New Zealand Sea Lion</h2>
+        <button onclick="toggleVisibility('new-zealand-sea-lion')" aria-expanded="false" aria-controls="new-zealand-sea-lion-details">View Details</button>
+        <div id="new-zealand-sea-lion-details">
+            <img src="endangered/oceania/new-zealand-sea-lion.jpg" alt="New Zealand Sea Lion" loading="lazy">
+            <p><strong>Scientific Name:</strong> Phocarctos hookeri</p>
+            <p><strong>Habitat:</strong> Coastal islands and beaches</p>
+            <p><strong>Current Population:</strong> Around 12,000 individuals</p>
+            <p><strong>Subregion:</strong> New Zealand</p>
+            <p><strong>Cause of Endangerment:</strong> Hunting, habitat disturbance, and disease</p>
+        </div>
+    </section>
+
+    <!-- Flatback Sea Turtle -->
+    <section class="species-info" id="flatback-sea-turtle">
+        <h2>Flatback Sea Turtle</h2>
+        <button onclick="toggleVisibility('flatback-sea-turtle')" aria-expanded="false" aria-controls="flatback-sea-turtle-details">View Details</button>
+        <div id="flatback-sea-turtle-details">
+            <img src="endangered/oceania/flatback-sea-turtle.jpg" alt="Flatback Sea Turtle" loading="lazy">
+            <p><strong>Scientific Name:</strong> Natator depressus</p>
+            <p><strong>Habitat:</strong> Coastal waters and beaches</p>
+            <p><strong>Current Population:</strong> Around 20,000 individuals</p>
+            <p><strong>Subregion:</strong> Northern Australia, Papua New Guinea</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, bycatch, and climate change</p>
+        </div>
+    </section>
+
+    <!-- Orange-bellied Parrot -->
+    <section class="species-info" id="orange-bellied-parrot">
+        <h2>Orange-bellied Parrot</h2>
+        <button onclick="toggleVisibility('orange-bellied-parrot')" aria-expanded="false" aria-controls="orange-bellied-parrot-details">View Details</button>
+        <div id="orange-bellied-parrot-details">
+            <img src="endangered/oceania/orange-bellied-parrot.jpg" alt="Orange-bellied Parrot" loading="lazy">
+            <p><strong>Scientific Name:</strong> Neophema chrysogaster</p>
+            <p><strong>Habitat:</strong> Coastal heathlands and saltmarshes</p>
+            <p><strong>Current Population:</strong> Fewer than 50 individuals</p>
+            <p><strong>Subregion:</strong> Tasmania, Australia</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, predation by introduced species</p>
+        </div>
+    </section>
+
+    <!-- Auckland Island Kaka -->
+    <section class="species-info" id="auckland-island-kaka">
+        <h2>Auckland Island Kaka</h2>
+        <button onclick="toggleVisibility('auckland-island-kaka')" aria-expanded="false" aria-controls="auckland-island-kaka-details">View Details</button>
+        <div id="auckland-island-kaka-details">
+            <img src="endangered/oceania/auckland-island-kaka.jpg" alt="Auckland Island Kaka" loading="lazy">
+            <p><strong>Scientific Name:</strong> Nestor meridionalis</p>
+            <p><strong>Habitat:</strong> Forests and scrublands</p>
+            <p><strong>Current Population:</strong> Approximately 100 individuals</p>
+            <p><strong>Subregion:</strong> Auckland Islands, New Zealand</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat destruction and predation by introduced species</p>
+        </div>
+    </section>
+
+    <!-- Leatherback Sea Turtle -->
+    <section class="species-info" id="leatherback-sea-turtle">
+        <h2>Leatherback Sea Turtle</h2>
+        <button onclick="toggleVisibility('leatherback-sea-turtle')" aria-expanded="false" aria-controls="leatherback-sea-turtle-details">View Details</button>
+        <div id="leatherback-sea-turtle-details">
+            <img src="endangered/oceania/leatherback-sea-turtle.jpg" alt="Leatherback Sea Turtle" loading="lazy">
+            <p><strong>Scientific Name:</strong> Dermochelys coriacea</p>
+            <p><strong>Habitat:</strong> Open ocean and coastal waters</p>
+            <p><strong>Current Population:</strong> Around 2,000 nesting females in Oceania</p>
+            <p><strong>Subregion:</strong> Pacific Islands, Australia, New Zealand</p>
+            <p><strong>Cause of Endangerment:</strong> Bycatch, habitat destruction, and plastic pollution</p>
+        </div>
+    </section>
+
+    <!-- Fiji Banded Iguana -->
+    <section class="species-info" id="fiji-banded-iguana">
+        <h2>Fiji Banded Iguana</h2>
+        <button onclick="toggleVisibility('fiji-banded-iguana')" aria-expanded="false" aria-controls="fiji-banded-iguana-details">View Details</button>
+        <div id="fiji-banded-iguana-details">
+            <img src="endangered/oceania/fiji-banded-iguana.jpg" alt="Fiji Banded Iguana" loading="lazy">
+            <p><strong>Scientific Name:</strong> Brachylophus vitiensis</p>
+            <p><strong>Habitat:</strong> Tropical forests and coastal islands</p>
+            <p><strong>Current Population:</strong> Fewer than 2,500 individuals</p>
+            <p><strong>Subregion:</strong> Fiji Islands</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, predation by introduced species</p>
+        </div>
+    </section>
+
+    <!-- Northern Hairy-nosed Wombat -->
+    <section class="species-info" id="northern-hairy-nosed-wombat">
+        <h2>Northern Hairy-nosed Wombat</h2>
+        <button onclick="toggleVisibility('northern-hairy-nosed-wombat')" aria-expanded="false" aria-controls="northern-hairy-nosed-wombat-details">View Details</button>
+        <div id="northern-hairy-nosed-wombat-details">
+            <img src="endangered/oceania/northern-hairy-nosed-wombat.jpg" alt="Northern Hairy-nosed Wombat" loading="lazy">
+            <p><strong>Scientific Name:</strong> Lasiorhinus krefftii</p>
+            <p><strong>Habitat:</strong> Dry forests and woodlands</p>
+            <p><strong>Current Population:</strong> Around 250 individuals</p>
+            <p><strong>Subregion:</strong> Queensland, Australia</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat destruction, predation, and climate change</p>
+        </div>
+    </section>
+
+    <!-- Greater Bilby -->
+    <section class="species-info" id="greater-bilby">
+        <h2>Greater Bilby</h2>
+        <button onclick="toggleVisibility('greater-bilby')" aria-expanded="false" aria-controls="greater-bilby-details">View Details</button>
+        <div id="greater-bilby-details">
+            <img src="endangered/oceania/greater-bilby.jpg" alt="Greater Bilby" loading="lazy">
+            <p><strong>Scientific Name:</strong> Macrotis lagotis</p>
+            <p><strong>Habitat:</strong> Desert and arid regions</p>
+            <p><strong>Current Population:</strong> Around 10,000 individuals</p>
+            <p><strong>Subregion:</strong> Australia</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat destruction, predation by non-native species</p>
+        </div>
+    </section>
+
+    <!-- Tonga Flying Fox -->
+    <section class="species-info" id="tonga-flying-fox">
+        <h2>Tonga Flying Fox</h2>
+        <button onclick="toggleVisibility('tonga-flying-fox')" aria-expanded="false" aria-controls="tonga-flying-fox-details">View Details</button>
+        <div id="tonga-flying-fox-details">
+            <img src="endangered/oceania/tonga-flying-fox.jpg" alt="Tonga Flying Fox" loading="lazy">
+            <p><strong>Scientific Name:</strong> Pteropus tonganus</p>
+            <p><strong>Habitat:</strong> Coastal forests and mangroves</p>
+            <p><strong>Current Population:</strong> Around 500 individuals</p>
+            <p><strong>Subregion:</strong> Tonga Islands</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, hunting, and natural disasters</p>
+        </div>
+    </section>
+
+    <!-- Māui Dolphin -->
+    <section class="species-info" id="maui-dolphin">
+        <h2>Māui Dolphin</h2>
+        <button onclick="toggleVisibility('maui-dolphin')" aria-expanded="false" aria-controls="maui-dolphin-details">View Details</button>
+        <div id="maui-dolphin-details">
+            <img src="endangered/oceania/maui-dolphin.jpg" alt="Māui Dolphin" loading="lazy">
+            <p><strong>Scientific Name:</strong> Cephalorhynchus hectori maui</p>
+            <p><strong>Habitat:</strong> Coastal waters, primarily off the North Island of New Zealand</p>
+            <p><strong>Current Population:</strong> Fewer than 100 individuals</p>
+            <p><strong>Subregion:</strong> New Zealand</p>
+            <p><strong>Cause of Endangerment:</strong> Bycatch in fishing nets, habitat destruction</p>
+        </div>
+    </section>
+
+    <!-- Kākāriki (Yellow-fronted Parakeet) -->
+    <section class="species-info" id="kakariki">
+        <h2>Kākāriki (Yellow-fronted Parakeet)</h2>
+        <button onclick="toggleVisibility('kakariki')" aria-expanded="false" aria-controls="kakariki-details">View Details</button>
+        <div id="kakariki-details">
+            <img src="endangered/oceania/kakariki.jpg" alt="Kākāriki" loading="lazy">
+            <p><strong>Scientific Name:</strong> Cyanoramphus auriceps</p>
+            <p><strong>Habitat:</strong> Forests, scrublands, and grasslands</p>
+            <p><strong>Current Population:</strong> Less than 1,000 individuals</p>
+            <p><strong>Subregion:</strong> New Zealand</p>
+            <p><strong>Cause of Endangerment:</strong> Predation, habitat loss, and human activity</p>
+        </div>
+    </section>
+
+    <!-- Macquarie Island Cormorant -->
+    <section class="species-info" id="macquarie-island-cormorant">
+        <h2>Macquarie Island Cormorant</h2>
+        <button onclick="toggleVisibility('macquarie-island-cormorant')" aria-expanded="false" aria-controls="macquarie-island-cormorant-details">View Details</button>
+        <div id="macquarie-island-cormorant-details">
+            <img src="endangered/oceania/macquarie-island-cormorant.jpg" alt="Macquarie Island Cormorant" loading="lazy">
+            <p><strong>Scientific Name:</strong> Phalacrocorax purpurascens</p>
+            <p><strong>Habitat:</strong> Coastal rocky islands and shorelines</p>
+            <p><strong>Current Population:</strong> Fewer than 1,000 individuals</p>
+            <p><strong>Subregion:</strong> Macquarie Island, Australia</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat destruction and predation by non-native species</p>
+        </div>
+    </section>
+
+    <!-- Tasmanian Devil -->
+    <section class="species-info" id="tasmanian-devil">
+        <h2>Tasmanian Devil</h2>
+        <button onclick="toggleVisibility('tasmanian-devil')" aria-expanded="false" aria-controls="tasmanian-devil-details">View Details</button>
+        <div id="tasmanian-devil-details">
+            <img src="endangered/oceania/tasmanian-devil.jpg" alt="Tasmanian Devil" loading="lazy">
+            <p><strong>Scientific Name:</strong> Sarcophilus harrisii</p>
+            <p><strong>Habitat:</strong> Forests and woodlands</p>
+            <p><strong>Current Population:</strong> Estimated at 50,000 individuals</p>
+            <p><strong>Subregion:</strong> Tasmania, Australia</p>
+            <p><strong>Cause of Endangerment:</strong> Facial tumor disease, habitat loss, and road fatalities</p>
+        </div>
+    </section>
+
+<script>
+    function goBack() {
+        if (window.history.length > 1) {
+            window.history.back();
+        } else {
+            window.location.href = 'index.html';
+        }
+    }
+
+    function toggleVisibility(id) {
+        const section = document.getElementById(id);
+        const button = section.querySelector('button');
+        section.classList.toggle('active');
+        button.setAttribute('aria-expanded', section.classList.contains('active'));
+    }
+</script>
+<div style="margin: 20px;">
+    <button onclick="goBack()" style="padding: 10px 20px; background-color: #2f5d3a; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        ← Back
+    </button>
+</div>
+</body>
+
+</html>

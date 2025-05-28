@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extinction Timeline</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #2b4c3f;
+    }
+    .back-button {
+      display: inline-block;
+      margin-bottom: 20px;
+      background-color: #2b4c3f;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .timeline {
+      position: relative;
+      margin: 50px auto;
+      padding: 10px 0;
+      width: 90%;
+    }
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #2b4c3f;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+    .event {
+      padding: 20px 40px;
+      position: relative;
+      width: 50%;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 20px 0;
+    }
+    .event::after {
+      content: '\1F3F7';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: 15px;
+      right: -12px;
+      background: #2b4c3f;
+      color: white;
+      font-size: 14px;
+      text-align: center;
+      line-height: 25px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .left {
+      left: 0;
+    }
+    .right {
+      left: 50%;
+    }
+    .event h3 {
+      margin-top: 0;
+      color: #2b4c3f;
+    }
+    .event p {
+      margin: 5px 0;
+      color: #333;
+    }
+    .year {
+      font-weight: bold;
+      color: #4a7c59;
+    }
+    @media screen and (max-width: 768px) {
+      .event {
+        width: 100%;
+        left: 0 !important;
+        margin-left: 0;
+      }
+      .timeline::after {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<a href="index.html" class="back-button">⬅ Back to Home</a>
+<h1>🦣 Species Extinction Timeline</h1>
+<div class="timeline">
+
+<!-- Events from earliest to latest (alternating left/right) -->
+<!-- Note: Reordered chronologically -->
+
+<div class="event left">
+  <h3>🦌 Irish Elk</h3>
+  <p class="year">Around 7,700 years ago</p>
+  <p>Massive deer likely extinct due to climate change and hunting.</p>
+</div>
+<div class="event right">
+  <h3>🐐 Bluebuck</h3>
+  <p class="year">1800</p>
+  <p>South African antelope lost to overhunting and competition.</p>
+</div>
+<div class="event left">
+  <h3>🦅 Great Auk</h3>
+  <p class="year">1844</p>
+  <p>Flightless seabird hunted for feathers and oil.</p>
+</div>
+<div class="event right">
+  <h3>🦉 Norfolk Island Kaka</h3>
+  <p class="year">1851</p>
+  <p>New Zealand parrot extinct due to habitat clearance and pet trade.</p>
+</div>
+<div class="event left">
+  <h3>🦊 Falkland Islands Wolf</h3>
+  <p class="year">1876</p>
+  <p>Only native Falklands mammal; hunted to extinction.</p>
+</div>
+<div class="event right">
+  <h3>🦆 Labrador Duck</h3>
+  <p class="year">1878</p>
+  <p>Extinct due to unknown causes, possibly food scarcity.</p>
+</div>
+<div class="event left">
+  <h3>🦓 Quagga</h3>
+  <p class="year">1883</p>
+  <p>Hunted to extinction in South Africa for meat and hides.</p>
+</div>
+<div class="event right">
+  <h3>🦢 Trumpeter Swan (Eastern US)</h3>
+  <p class="year">Early 1900s</p>
+  <p>Wiped out from East Coast U.S.; habitat loss, hunting.</p>
+</div>
+<div class="event left">
+  <h3>🦎 Cape Verde Giant Skink</h3>
+  <p class="year">1910s</p>
+  <p>Island skink hunted for meat and lost to habitat changes.</p>
+</div>
+<div class="event right">
+  <h3>🦉 Laughing Owl</h3>
+  <p class="year">1914</p>
+  <p>New Zealand species lost due to predators and habitat loss.</p>
+</div>
+<div class="event left">
+  <h3>🐦 Passenger Pigeon</h3>
+  <p class="year">1914</p>
+  <p>Once billions in number; extinct due to massive hunting.</p>
+</div>
+<div class="event right">
+  <h3>🕊️ Carolina Parakeet</h3>
+  <p class="year">1918</p>
+  <p>Only native parrot in eastern U.S.; habitat destruction caused extinction.</p>
+</div>
+<div class="event left">
+  <h3>🐟 New Zealand Grayling</h3>
+  <p class="year">1920s</p>
+  <p>Freshwater fish disappeared due to habitat degradation.</p>
+</div>
+<div class="event right">
+  <h3>🐗 Bubal Hartebeest</h3>
+  <p class="year">1923</p>
+  <p>Wiped out in North Africa by overhunting and land degradation.</p>
+</div>
+<div class="event left">
+  <h3>🦜 Paradise Parrot</h3>
+  <p class="year">1928</p>
+  <p>Australian bird extinct due to habitat loss and fire.</p>
+</div>
+<div class="event right">
+  <h3>🦃 Heath Hen</h3>
+  <p class="year">1932</p>
+  <p>North American bird, vanished due to disease and hunting.</p>
+</div>
+<div class="event left">
+  <h3>🦡 Desert Rat-Kangaroo</h3>
+  <p class="year">1935</p>
+  <p>Australian marsupial lost to drought and predators.</p>
+</div>
+<div class="event right">
+  <h3>🦌 Schomburgk’s Deer</h3>
+  <p class="year">1938</p>
+  <p>Extinct in Thailand due to habitat loss and hunting.</p>
+</div>
+<div class="event left">
+  <h3>🦀 Jamaican Giant Galliwasp</h3>
+  <p class="year">1940s</p>
+  <p>Lizard species lost to habitat destruction, mongoose predation.</p>
+</div>
+<div class="event right">
+  <h3>🐯 Caspian Tiger</h3>
+  <p class="year">1970</p>
+  <p>Extinct due to habitat loss and human conflict.</p>
+</div>
+<div class="event left">
+  <h3>🐍 Round Island Burrowing Boa</h3>
+  <p class="year">1975</p>
+  <p>Mauritian snake lost due to introduced predators.</p>
+</div>
+<div class="event right">
+  <h3>🦈 Pondicherry Shark</h3>
+  <p class="year">Last seen in 1979</p>
+  <p>Freshwater shark, possibly extinct due to pollution and overfishing.</p>
+</div>
+<div class="event left">
+  <h3>🦇 Guam Flying Fox</h3>
+  <p class="year">1980s</p>
+  <p>Bat species lost due to habitat loss and hunting.</p>
+</div>
+<div class="event right">
+  <h3>🐡 Tecopa Pupfish</h3>
+  <p class="year">1981</p>
+  <p>Small desert fish lost due to hot spring habitat alteration.</p>
+</div>
+<div class="event left">
+  <h3>🦀 Bermuda Land Snail</h3>
+  <p class="year">1990s</p>
+  <p>Thought extinct until rediscovery; habitat loss.</p>
+</div>
+<div class="event right">
+  <h3>🦔 Pyrenean Ibex</h3>
+  <p class="year">2000</p>
+  <p>One of four ibex species; declared extinct in Spain.</p>
+</div>
+<div class="event left">
+  <h3>🐘 Pinta Island Tortoise</h3>
+  <p class="year">2012</p>
+  <p>Species declared extinct after the death of Lonesome George.</p>
+</div>
+<div class="event right">
+  <h3>🦀 St. Helena Giant Earwig</h3>
+  <p class="year">2014</p>
+  <p>Insect extinct due to habitat loss and invasive species.</p>
+</div>
+<div class="event left">
+  <h3>🦏 Northern White Rhinoceros</h3>
+  <p class="year">2020s</p>
+  <p>Functionally extinct; only two females survive.</p>
+</div>
+
+</div>
+
+</body>
+</html>

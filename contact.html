@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us – Zoelio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Zoelio Logo" class="logo-img" />
+      <span>Zoelio</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="species.html">Endangered Species</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h2>Get in Touch</h2>
+    <p>If you have questions, suggestions, or want to collaborate with us, we’d love to hear from you!</p>
+    <div class="contact-container">
+      <form class="contact-form" action="https://formsubmit.co/contact.zoelio@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <!-- Formsubmit Hidden Config -->
+        <input type="hidden" name="_next" value="https://zoelioprojects01.github.io/Zoelio-Projects/thank-you.html">
+        <input type="hidden" name="_captcha" value="false">
+
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <h3>Contact Info</h3>
+        <p><strong>Email:</strong> <a href="mailto:contact.zoelio@gmail.com">contact.zoelio@gmail.com</a></p>
+        <p><strong>Instagram:</strong> @_zoelio_org</p>
+        <p><strong>Location:</strong> Prayagraj, Uttar Pradesh, India</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Zoelio. All rights reserved.
+  </footer>
+
+</body>
+</html>

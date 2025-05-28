@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Endangered Species of Antarctica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2f5d3a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .species-info {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .species-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #2f5d3a;
+        }
+
+        .species-info p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        .species-info button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .species-info button:hover {
+            background-color: #45a049;
+        }
+
+        .species-info div {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .species-info.active div {
+            display: block;
+        }
+
+        .species-info button:focus {
+            outline: none;
+        }
+
+        /* Image Styling */
+        .species-info img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Endangered Species of Antarctica</h1>
+    </header>
+
+    <!-- Emperor Penguin -->
+    <section class="species-info" id="emperor-penguin">
+        <h2>Emperor Penguin</h2>
+        <button onclick="toggleVisibility('emperor-penguin')" aria-expanded="false" aria-controls="emperor-penguin-details">View Details</button>
+        <div id="emperor-penguin-details">
+            <img src="endangered/antarctica/emperor-penguin.jpg" alt="Emperor Penguin" loading="lazy">
+            <p><strong>Scientific Name:</strong> Aptenodytes forsteri</p>
+            <p><strong>Habitat:</strong> Sea ice for breeding</p>
+            <p><strong>Current Population:</strong> ~595,000 (Near Threatened, declining)</p>
+            <p><strong>Subregion:</strong> Antarctic coastline, Ross Sea</p>
+            <p><strong>Cause of Endangerment:</strong> Sea ice loss, climate change</p>
+        </div>
+    </section>
+
+    <!-- Adélie Penguin -->
+    <section class="species-info" id="adelie-penguin">
+        <h2>Adélie Penguin</h2>
+        <button onclick="toggleVisibility('adelie-penguin')" aria-expanded="false" aria-controls="adelie-penguin-details">View Details</button>
+        <div id="adelie-penguin-details">
+            <img src="endangered/antarctica/adelie-penguin.jpg" alt="Adélie Penguin" loading="lazy">
+            <p><strong>Scientific Name:</strong> Pygoscelis adeliae</p>
+            <p><strong>Habitat:</strong> Coastal ice-free areas</p>
+            <p><strong>Current Population:</strong> ~10 million (declining in some colonies)</p>
+            <p><strong>Subregion:</strong> Antarctic Peninsula, Ross Sea</p>
+            <p><strong>Cause of Endangerment:</strong> Krill decline, warming waters</p>
+        </div>
+    </section>
+
+    <!-- Southern Rockhopper Penguin -->
+    <section class="species-info" id="southern-rockhopper-penguin">
+        <h2>Southern Rockhopper Penguin</h2>
+        <button onclick="toggleVisibility('southern-rockhopper-penguin')" aria-expanded="false" aria-controls="southern-rockhopper-penguin-details">View Details</button>
+        <div id="southern-rockhopper-penguin-details">
+            <img src="endangered/antarctica/southern-rockhopper-penguin.jpg" alt="Southern Rockhopper Penguin" loading="lazy">
+            <p><strong>Scientific Name:</strong> Eudyptes chrysocome</p>
+            <p><strong>Habitat:</strong> Sub-Antarctic islands</p>
+            <p><strong>Current Population:</strong> ~1.5 million pairs (Vulnerable, declining)</p>
+            <p><strong>Subregion:</strong> South Georgia</p>
+            <p><strong>Cause of Endangerment:</strong> Climate change, overfishing</p>
+        </div>
+    </section>
+
+    <!-- Macaroni Penguin -->
+    <section class="species-info" id="macaroni-penguin">
+        <h2>Macaroni Penguin</h2>
+        <button onclick="toggleVisibility('macaroni-penguin')" aria-expanded="false" aria-controls="macaroni-penguin-details">View Details</button>
+        <div id="macaroni-penguin-details">
+            <img src="endangered/antarctica/macaroni-penguin.jpg" alt="Macaroni Penguin" loading="lazy">
+            <p><strong>Scientific Name:</strong> Eudyptes chrysolophus</p>
+            <p><strong>Habitat:</strong> Sub-Antarctic islands</p>
+            <p><strong>Current Population:</strong> ~18 million (Vulnerable, declining)</p>
+            <p><strong>Subregion:</strong> South Georgia, Antarctic Peninsula</p>
+            <p><strong>Cause of Endangerment:</strong> Predation, disease outbreaks</p>
+        </div>
+    </section>
+
+    <!-- Antarctic Krill -->
+    <section class="species-info" id="antarctic-krill">
+        <h2>Antarctic Krill</h2>
+        <button onclick="toggleVisibility('antarctic-krill')" aria-expanded="false" aria-controls="antarctic-krill-details">View Details</button>
+        <div id="antarctic-krill-details">
+            <img src="endangered/antarctica/antarctic-krill.jpg" alt="Antarctic Krill" loading="lazy">
+            <p><strong>Scientific Name:</strong> Euphausia superba</p>
+            <p><strong>Habitat:</strong> Southern Ocean</p>
+            <p><strong>Current Population:</strong> Declining, exact unknown</p>
+            <p><strong>Subregion:</strong> Antarctic Peninsula, Scotia Sea</p>
+            <p><strong>Cause of Endangerment:</strong> Industrial fishing, sea ice loss</p>
+        </div>
+    </section>
+
+    <!-- Fin Whale -->
+    <section class="species-info" id="fin-whale">
+        <h2>Fin Whale</h2>
+        <button onclick="toggleVisibility('fin-whale')" aria-expanded="false" aria-controls="fin-whale-details">View Details</button>
+        <div id="fin-whale-details">
+            <img src="endangered/antarctica/fin-whale.jpg" alt="Fin Whale" loading="lazy">
+            <p><strong>Scientific Name:</strong> Balaenoptera physalus</p>
+            <p><strong>Habitat:</strong> Southern Ocean</p>
+            <p><strong>Current Population:</strong> ~100,000 globally (Endangered)</p>
+            <p><strong>Subregion:</strong> Southern Ocean</p>
+            <p><strong>Cause of Endangerment:</strong> Past whaling, ship strikes</p>
+        </div>
+    </section>
+
+    <!-- Sei Whale -->
+    <section class="species-info" id="sei-whale">
+        <h2>Sei Whale</h2>
+        <button onclick="toggleVisibility('sei-whale')" aria-expanded="false" aria-controls="sei-whale-details">View Details</button>
+        <div id="sei-whale-details">
+            <img src="endangered/antarctica/sei-whale.jpg" alt="Sei Whale" loading="lazy">
+            <p><strong>Scientific Name:</strong> Balaenoptera borealis</p>
+            <p><strong>Habitat:</strong> Southern Ocean</p>
+            <p><strong>Current Population:</strong> ~80,000 globally (Endangered)</p>
+            <p><strong>Subregion:</strong> Southern Ocean</p>
+            <p><strong>Cause of Endangerment:</strong> Climate change, overfishing</p>
+        </div>
+    </section>
+
+    <!-- Wandering Albatross -->
+    <section class="species-info" id="wandering-albatross">
+        <h2>Wandering Albatross</h2>
+        <button onclick="toggleVisibility('wandering-albatross')" aria-expanded="false" aria-controls="wandering-albatross-details">View Details</button>
+        <div id="wandering-albatross-details">
+            <img src="endangered/antarctica/wandering-albatross.jpg" alt="Wandering Albatross" loading="lazy">
+            <p><strong>Scientific Name:</strong> Diomedea exulans</p>
+            <p><strong>Habitat:</strong> Southern Ocean, sub-Antarctic islands</p>
+            <p><strong>Current Population:</strong> ~26,000 (Vulnerable)</p>
+            <p><strong>Subregion:</strong> South Georgia, Crozet Islands</p>
+            <p><strong>Cause of Endangerment:</strong> Longline fishing, bycatch</p>
+        </div>
+    </section>
+
+    <!-- Amsterdam Albatross -->
+    <section class="species-info" id="amsterdam-albatross">
+        <h2>Amsterdam Albatross</h2>
+        <button onclick="toggleVisibility('amsterdam-albatross')" aria-expanded="false" aria-controls="amsterdam-albatross-details">View Details</button>
+        <div id="amsterdam-albatross-details">
+            <img src="endangered/antarctica/amsterdam-albatross.jpg" alt="Amsterdam Albatross" loading="lazy">
+            <p><strong>Scientific Name:</strong> Diomedea amsterdamensis</p>
+            <p><strong>Habitat:</strong> Southern Ocean</p>
+            <p><strong>Current Population:</strong> ~100 (Critically Endangered)</p>
+            <p><strong>Subregion:</strong> Sub-Antarctic islands</p>
+            <p><strong>Cause of Endangerment:</strong> Bycatch, habitat disturbance</p>
+        </div>
+    </section>
+
+    <!-- Crabeater Seal -->
+    <section class="species-info" id="crabeater-seal">
+        <h2>Crabeater Seal</h2>
+        <button onclick="toggleVisibility('crabeater-seal')" aria-expanded="false" aria-controls="crabeater-seal-details">View Details</button>
+        <div id="crabeater-seal-details">
+            <img src="endangered/antarctica/crabeater-seal.jpg" alt="Crabeater Seal" loading="lazy">
+            <p><strong>Scientific Name:</strong> Lobodon carcinophaga</p>
+            <p><strong>Habitat:</strong> Sea ice</p>
+            <p><strong>Current Population:</strong> ~2–5 million (declining in some areas)</p>
+            <p><strong>Subregion:</strong> Antarctic Peninsula, Weddell Sea</p>
+            <p><strong>Cause of Endangerment:</strong> Sea ice loss, krill decline</p>
+        </div>
+    </section>
+
+    <!-- Weddell Seal -->
+    <section class="species-info" id="weddell-seal">
+        <h2>Weddell Seal</h2>
+        <button onclick="toggleVisibility('weddell-seal')" aria-expanded="false" aria-controls="weddell-seal-details">View Details</button>
+        <div id="weddell-seal-details">
+            <img src="endangered/antarctica/weddell-seal.jpg" alt="Weddell Seal" loading="lazy">
+            <p><strong>Scientific Name:</strong> Leptonychotes weddellii</p>
+            <p><strong>Habitat:</strong> Sea ice</p>
+            <p><strong>Current Population:</strong> ~800,000 (declining in some areas)</p>
+            <p><strong>Subregion:</strong> Ross Sea, Antarctic coastline</p>
+            <p><strong>Cause of Endangerment:</strong> Climate change, human disturbance</p>
+        </div>
+    </section>
+
+    <!-- Southern Giant Petrel -->
+    <section class="species-info" id="southern-giant-petrel">
+        <h2>Southern Giant Petrel</h2>
+        <button onclick="toggleVisibility('southern-giant-petrel')" aria-expanded="false" aria-controls="southern-giant-petrel-details">View Details</button>
+        <div id="southern-giant-petrel-details">
+            <img src="endangered/antarctica/southern-giant-petrel.jpg" alt="Southern Giant Petrel" loading="lazy">
+            <p><strong>Scientific Name:</strong> Macronectes giganteus</p>
+            <p><strong>Habitat:</strong> Southern Ocean, sub-Antarctic islands</p>
+            <p><strong>Current Population:</strong> ~100,000 (declining)</p>
+            <p><strong>Subregion:</strong> South Georgia, Antarctic Peninsula</p>
+            <p><strong>Cause of Endangerment:</strong> Bycatch, pollution</p>
+        </div>
+    </section>
+
+    <!-- Antarctic Tern -->
+    <section class="species-info" id="antarctic-tern">
+        <h2>Antarctic Tern</h2>
+        <button onclick="toggleVisibility('antarctic-tern')" aria-expanded="false" aria-controls="antarctic-tern-details">View Details</button>
+        <div id="antarctic-tern-details">
+            <img src="endangered/antarctica/antarctic-tern.jpg" alt="Antarctic Tern" loading="lazy">
+            <p><strong>Scientific Name:</strong> Sterna vittata</p>
+            <p><strong>Habitat:</strong> Coastal Antarctica</p>
+            <p><strong>Current Population:</strong> ~50,000 (declining in some colonies)</p>
+            <p><strong>Subregion:</strong> Antarctic Peninsula, sub-Antarctic islands</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat disturbance, climate change</p>
+        </div>
+    </section>
+
+    <!-- Patagonian Toothfish -->
+    <section class="species-info" id="patagonian-toothfish">
+        <h2>Patagonian Toothfish</h2>
+        <button onclick="toggleVisibility('patagonian-toothfish')" aria-expanded="false" aria-controls="patagonian-toothfish-details">View Details</button>
+        <div id="patagonian-toothfish-details">
+            <img src="endangered/antarctica/patagonian-toothfish.jpg" alt="Patagonian Toothfish" loading="lazy">
+            <p><strong>Scientific Name:</strong> Dissostichus eleginoides</p>
+            <p><strong>Habitat:</strong> Southern Ocean</p>
+            <p><strong>Current Population:</strong> Declining, exact unknown</p>
+            <p><strong>Subregion:</strong> Ross Sea, Antarctic Peninsula</p>
+            <p><strong>Cause of Endangerment:</strong> Overfishing, illegal fishing</p>
+        </div>
+    </section>
+
+    <!-- Antarctic Pearlwort -->
+    <section class="species-info" id="antarctic-pearlwort">
+        <h2>Antarctic Pearlwort</h2>
+        <button onclick="toggleVisibility('antarctic-pearlwort')" aria-expanded="false" aria-controls="antarctic-pearlwort-details">View Details</button>
+        <div id="antarctic-pearlwort-details">
+            <img src="endangered/antarctica/antarctic-pearlwort.jpg" alt="Antarctic Pearlwort" loading="lazy">
+            <p><strong>Scientific Name:</strong> Colobanthus quitensis</p>
+            <p><strong>Habitat:</strong> Ice-free terrestrial areas</p>
+            <p><strong>Current Population:</strong> Declining, exact unknown</p>
+            <p><strong>Subregion:</strong> Antarctic Peninsula</p>
+            <p><strong>Cause of Endangerment:</strong> Climate change, invasive species</p>
+        </div>
+    </section>
+
+<script>
+    function goBack() {
+        if (window.history.length > 1) {
+            window.history.back();
+        } else {
+            window.location.href = 'index.html';
+        }
+    }
+
+    function toggleVisibility(id) {
+        const section = document.getElementById(id);
+        const button = section.querySelector('button');
+        section.classList.toggle('active');
+        button.setAttribute('aria-expanded', section.classList.contains('active'));
+    }
+</script>
+<div style="margin: 20px;">
+    <button onclick="goBack()" style="padding: 10px 20px; background-color: #2f5d3a; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        ← Back
+    </button>
+</div>
+</body>
+
+</html>

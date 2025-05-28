@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Endangered Species of Africa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2f5d3a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .species-info {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .species-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #2f5d3a;
+        }
+
+        .species-info p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        .species-info button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .species-info button:hover {
+            background-color: #45a049;
+        }
+
+        .species-info div {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .species-info.active div {
+            display: block;
+        }
+
+        .species-info button:focus {
+            outline: none;
+        }
+
+        /* Image Styling */
+        .species-info img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Endangered Species of Africa</h1>
+    </header>
+
+    <!-- Mountain Gorilla -->
+    <section class="species-info" id="mountain-gorilla">
+        <h2>Mountain Gorilla</h2>
+        <button onclick="toggleVisibility('mountain-gorilla')" aria-expanded="false" aria-controls="mountain-gorilla-details">View Details</button>
+        <div id="mountain-gorilla-details">
+            <img src="endangered/africa/mountain-gorilla.jpg" alt="Mountain Gorilla" loading="lazy">
+            <p><strong>Scientific Name:</strong> Gorilla beringei beringei</p>
+            <p><strong>Habitat:</strong> Forests of Uganda, Rwanda, and the Democratic Republic of the Congo (DRC).</p>
+            <p><strong>Current Population:</strong> Approximately 1,000 individuals</p>
+            <p><strong>Subregion:</strong> Central Africa</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat destruction, poaching, human-wildlife conflict, disease transmission from humans (e.g., respiratory infections).</p>
+        </div>
+    </section>
+
+    <!-- African Wild Dog -->
+    <section class="species-info" id="african-wild-dog">
+        <h2>African Wild Dog</h2>
+        <button onclick="toggleVisibility('african-wild-dog')" aria-expanded="false" aria-controls="african-wild-dog-details">View Details</button>
+        <div id="african-wild-dog-details">
+            <img src="endangered/africa/african-wild-dog.jpg" alt="African Wild Dog" loading="lazy">
+            <p><strong>Scientific Name:</strong> Lycaon pictus</p>
+            <p><strong>Habitat:</strong> Savannas, arid zones, and woodlands across sub-Saharan Africa.</p>
+            <p><strong>Current Population:</strong> Around 6,000 individuals.</p>
+            <p><strong>Subregion:</strong> Southern and Eastern Africa.</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, human-wildlife conflict, diseases such as rabies, and poaching.</p>
+        </div>
+    </section>
+
+    <!-- African Elephant -->
+    <section class="species-info" id="african-elephant">
+        <h2>African Elephant</h2>
+        <button onclick="toggleVisibility('african-elephant')" aria-expanded="false" aria-controls="african-elephant-details">View Details</button>
+        <div id="african-elephant-details">
+            <img src="endangered/africa/african-elephant.jpg" alt="African Elephant" loading="lazy">
+            <p><strong>Scientific Name:</strong> Loxodonta africana</p>
+            <p><strong>Habitat:</strong> Savannas, forests, and desert areas of Africa.</p>
+            <p><strong>Current Population:</strong> Approximately 415,000 individuals.</p>
+            <p><strong>Subregion:</strong> Sub-Saharan Africa.</p>
+            <p><strong>Cause of Endangerment:</strong> Poaching for ivory, habitat loss, and human-wildlife conflict.</p>
+        </div>
+    </section>
+
+    <!-- Cheetah -->
+    <section class="species-info" id="cheetah">
+        <h2>Cheetah</h2>
+        <button onclick="toggleVisibility('cheetah')" aria-expanded="false" aria-controls="cheetah-details">View Details</button>
+        <div id="cheetah-details">
+            <img src="endangered/africa/cheetah.jpg" alt="Cheetah" loading="lazy">
+            <p><strong>Scientific Name:</strong> Acinonyx jubatus</p>
+            <p><strong>Habitat:</strong> Grasslands and open savannas of Africa.</p>
+            <p><strong>Current Population:</strong> Estimated 7,100 individuals.</p>
+            <p><strong>Subregion:</strong> Eastern and Southern Africa.</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, human-wildlife conflict, and loss of prey.</p>
+        </div>
+    </section>
+
+    <!-- Black Rhino -->
+    <section class="species-info" id="black-rhino">
+        <h2>Black Rhino</h2>
+        <button onclick="toggleVisibility('black-rhino')" aria-expanded="false" aria-controls="black-rhino-details">View Details</button>
+        <div id="black-rhino-details">
+            <img src="endangered/africa/black-rhino.jpg" alt="Black Rhino" loading="lazy">
+            <p><strong>Scientific Name:</strong> Diceros bicornis</p>
+            <p><strong>Habitat:</strong> Scrub and savanna in Eastern and Southern Africa.</p>
+            <p><strong>Current Population:</strong> Approximately 5,000 individuals.</p>
+            <p><strong>Subregion:</strong> Southern and Eastern Africa.</p>
+            <p><strong>Cause of Endangerment:</strong> Poaching for horns, habitat loss, and human-wildlife conflict.</p>
+        </div>
+    </section>
+
+    <!-- Congo Gorilla -->
+    <section class="species-info" id="congo-gorilla">
+        <h2>Congo Gorilla</h2>
+        <button onclick="toggleVisibility('congo-gorilla')" aria-expanded="false" aria-controls="congo-gorilla-details">View Details</button>
+        <div id="congo-gorilla-details">
+            <img src="endangered/africa/congo-gorilla.jpg" alt="Congo Gorilla" loading="lazy">
+            <p><strong>Scientific Name:</strong> Gorilla gorilla gorilla</p>
+            <p><strong>Habitat:</strong> Rainforests in the Congo Basin of Central Africa.</p>
+            <p><strong>Current Population:</strong> Around 100,000 individuals.</p>
+            <p><strong>Subregion:</strong> Central Africa.</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, poaching, disease transmission, and human-wildlife conflict.</p>
+        </div>
+    </section>
+
+    <!-- African Penguin -->
+    <section class="species-info" id="african-penguin">
+        <h2>African Penguin</h2>
+        <button onclick="toggleVisibility('african-penguin')" aria-expanded="false" aria-controls="african-penguin-details">View Details</button>
+        <div id="african-penguin-details">
+            <img src="endangered/africa/african-penguin.jpg" alt="African Penguin" loading="lazy">
+            <p><strong>Scientific Name:</strong> Spheniscus demersus</p>
+            <p><strong>Habitat:</strong> Coastal regions of South Africa and Namibia.</p>
+            <p><strong>Current Population:</strong> Approximately 50,000 individuals.</p>
+            <p><strong>Subregion:</strong> Southern Africa.</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat destruction, oil spills, overfishing, and climate change.</p>
+        </div>
+    </section>
+
+    <!-- White Rhinoceros -->
+    <section class="species-info" id="white-rhino">
+        <h2>White Rhinoceros</h2>
+        <button onclick="toggleVisibility('white-rhino')" aria-expanded="false" aria-controls="white-rhino-details">View Details</button>
+        <div id="white-rhino-details">
+            <img src="endangered/africa/white-rhino.jpg" alt="White Rhino" loading="lazy">
+            <p><strong>Scientific Name:</strong> Ceratotherium simum</p>
+            <p><strong>Habitat:</strong> Grasslands and savannas of Southern Africa.</p>
+            <p><strong>Current Population:</strong> Approximately 18,000 individuals.</p>
+            <p><strong>Subregion:</strong> Southern Africa.</p>
+            <p><strong>Cause of Endangerment:</strong> Poaching for horns, loss of habitat, and human-wildlife conflict.</p>
+        </div>
+    </section>
+
+    <!-- Eastern Lowland Gorilla -->
+    <section class="species-info" id="eastern-lowland-gorilla">
+        <h2>Eastern Lowland Gorilla</h2>
+        <button onclick="toggleVisibility('eastern-lowland-gorilla')" aria-expanded="false" aria-controls="eastern-lowland-gorilla-details">View Details</button>
+        <div id="eastern-lowland-gorilla-details">
+            <img src="endangered/africa/eastern-lowland-gorilla.jpg" alt="Eastern Lowland Gorilla" loading="lazy">
+            <p><strong>Scientific Name:</strong> Gorilla beringei graueri</p>
+            <p><strong>Habitat:</strong> Rainforests in the Democratic Republic of Congo (DRC).</p>
+            <p><strong>Current Population:</strong> Estimated 3,800 individuals.</p>
+            <p><strong>Subregion:</strong> Central Africa.</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, poaching, disease transmission, and civil conflict.</p>
+        </div>
+    </section>
+
+    <!-- Pygmy Hippopotamus -->
+    <section class="species-info" id="pygmy-hippopotamus">
+        <h2>Pygmy Hippopotamus</h2>
+        <button onclick="toggleVisibility('pygmy-hippopotamus')" aria-expanded="false" aria-controls="pygmy-hippopotamus-details">View Details</button>
+        <div id="pygmy-hippopotamus-details">
+            <img src="endangered/africa/pygmy-hippopotamus.jpg" alt="Pygmy Hippopotamus" loading="lazy">
+            <p><strong>Scientific Name:</strong> Choeropsis liberiensis</p>
+            <p><strong>Habitat:</strong> Forested swamps and rivers of West Africa.</p>
+            <p><strong>Current Population:</strong> Estimated 2,000 individuals.</p>
+            <p><strong>Subregion:</strong> Western Africa.</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat destruction, hunting, and human encroachment.</p>
+        </div>
+    </section>
+
+    <!-- Saiga Antelope -->
+    <section class="species-info" id="saiga-antelope">
+        <h2>Saiga Antelope</h2>
+        <button onclick="toggleVisibility('saiga-antelope')" aria-expanded="false" aria-controls="saiga-antelope-details">View Details</button>
+        <div id="saiga-antelope-details">
+            <img src="endangered/africa/saiga-antelope.jpg" alt="Saiga Antelope" loading="lazy">
+            <p><strong>Scientific Name:</strong> Saiga tatarica</p>
+            <p><strong>Habitat:</strong> Steppes of Central Asia, with some populations in Africa.</p>
+            <p><strong>Current Population:</strong> Approximately 100,000 individuals.</p>
+            <p><strong>Subregion:</strong> Central Asia (mainly) and Africa.</p>
+            <p><strong>Cause of Endangerment:</strong> Poaching, habitat loss, and disease.</p>
+        </div>
+    </section>
+
+    <!-- Spiny-Tailed Lizard -->
+    <section class="species-info" id="spiny-tailed-lizard">
+        <h2>Spiny-Tailed Lizard</h2>
+        <button onclick="toggleVisibility('spiny-tailed-lizard')" aria-expanded="false" aria-controls="spiny-tailed-lizard-details">View Details</button>
+        <div id="spiny-tailed-lizard-details">
+            <img src="endangered/africa/spiny-tailed-lizard.jpg" alt="Spiny-Tailed Lizard" loading="lazy">
+            <p><strong>Scientific Name:</strong> Uromastyx spp.</p>
+            <p><strong>Habitat:</strong> Deserts and rocky areas of Northern Africa.</p>
+            <p><strong>Current Population:</strong> Vulnerable to extinction.</p>
+            <p><strong>Subregion:</strong> Northern Africa.</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat destruction, illegal pet trade, and over-hunting.</p>
+        </div>
+    </section>
+
+    <!-- Rothschild Giraffe -->
+    <section class="species-info" id="rothschild-giraffe">
+        <h2>Rothschild Giraffe</h2>
+        <button onclick="toggleVisibility('rothschild-giraffe')" aria-expanded="false" aria-controls="rothschild-giraffe-details">View Details</button>
+        <div id="rothschild-giraffe-details">
+            <img src="endangered/africa/rothschild-giraffe.jpg" alt="Rothschild Giraffe" loading="lazy">
+            <p><strong>Scientific Name:</strong> Giraffa camelopardalis rothschildi</p>
+            <p><strong>Habitat:</strong> Grasslands and woodlands of Uganda and Kenya.</p>
+            <p><strong>Current Population:</strong> Approximately 1,100 individuals.</p>
+            <p><strong>Subregion:</strong> Eastern Africa.</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss and poaching.</p>
+        </div>
+    </section>
+
+    <!-- Okapi -->
+    <section class="species-info" id="okapi">
+        <h2>Okapi</h2>
+        <button onclick="toggleVisibility('okapi')" aria-expanded="false" aria-controls="okapi-details">View Details</button>
+        <div id="okapi-details">
+            <img src="endangered/africa/okapi.jpg" alt="Okapi" loading="lazy">
+            <p><strong>Scientific Name:</strong> Okapia johnstoni</p>
+            <p><strong>Habitat:</strong> Dense rainforests of the Democratic Republic of Congo.</p>
+            <p><strong>Current Population:</strong> Estimated 10,000 individuals.</p>
+            <p><strong>Subregion:</strong> Central Africa.</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss and poaching.</p>
+        </div>
+    </section>
+
+    <!-- Dugong -->
+    <section class="species-info" id="dugong">
+        <h2>Dugong</h2>
+        <button onclick="toggleVisibility('dugong')" aria-expanded="false" aria-controls="dugong-details">View Details</button>
+        <div id="dugong-details">
+            <img src="endangered/africa/dugong.jpg" alt="Dugong" loading="lazy">
+            <p><strong>Scientific Name:</strong> Dugong dugon</p>
+            <p><strong>Habitat:</strong> Coastal areas of East Africa and Red Sea.</p>
+            <p><strong>Current Population:</strong> Estimated 100,000 individuals.</p>
+            <p><strong>Subregion:</strong> Eastern Africa.</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat destruction, hunting, and boat collisions.</p>
+        </div>
+    </section>
+
+<script>
+    function goBack() {
+        if (window.history.length > 1) {
+            window.history.back();
+        } else {
+            window.location.href = 'index.html';
+        }
+    }
+
+    function toggleVisibility(id) {
+        const section = document.getElementById(id);
+        const button = section.querySelector('button');
+        section.classList.toggle('active');
+        button.setAttribute('aria-expanded', section.classList.contains('active'));
+    }
+</script>
+<div style="margin: 20px;">
+    <button onclick="goBack()" style="padding: 10px 20px; background-color: #2f5d3a; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        ← Back
+    </button>
+</div>
+</body>
+
+</html>

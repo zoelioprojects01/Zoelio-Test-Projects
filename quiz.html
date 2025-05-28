@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Section</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #2b4c3f;
+    }
+    .back-button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #2b4c3f;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .quiz-container {
+      width: 80%;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .options {
+      margin: 10px 0;
+    }
+    .options input {
+      margin-right: 10px;
+    }
+    #score {
+      text-align: center;
+      font-size: 1.5em;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<a href="index.html" class="back-button">⬅ Back to Home</a>
+<h1>🦣 Endangered Species Quiz</h1>
+
+<div class="quiz-container" id="quiz-container">
+  <div id="quiz"></div>
+  <button onclick="submitQuiz()">Submit</button>
+  <div id="score"></div>
+</div>
+
+<script>
+  // Array of all questions with options
+  const allQuestions = [
+    {
+      question: "Which of the following species was declared extinct in 1981?",
+      options: ["Pinta Island Tortoise", "Passenger Pigeon", "Bubal Hartebeest", "Northern White Rhinoceros"],
+      answer: "Pinta Island Tortoise"
+    },
+    {
+      question: "Which species went extinct in the wild in 2000?",
+      options: ["Pyrenean Ibex", "Carolina Parakeet", "Jamaican Giant Galliwasp", "Tecopa Pupfish"],
+      answer: "Pyrenean Ibex"
+    },
+    {
+      question: "What caused the extinction of the Northern White Rhinoceros?",
+      options: ["Habitat loss", "Hunting", "Climate change", "Predators"],
+      answer: "Hunting"
+    },
+    {
+      question: "In which year did the Great Auk go extinct?",
+      options: ["1944", "1878", "1867", "1844"],
+      answer: "1844"
+    },
+    {
+      question: "Which species was known for its long feathers and colorful plumage?",
+      options: ["Passenger Pigeon", "Great Auk", "Falkland Islands Wolf", "Heath Hen"],
+      answer: "Passenger Pigeon"
+    },
+    {
+      question: "Which extinct species was hunted to extinction in South Africa in 1883?",
+      options: ["Bluebuck", "Quagga", "Northern White Rhinoceros", "Laughing Owl"],
+      answer: "Quagga"
+    },
+    {
+      question: "When was the last known sighting of the Pondicherry Shark?",
+      options: ["1979", "1981", "2000", "2012"],
+      answer: "1979"
+    },
+    {
+      question: "Which extinct species was also known as the Bermuda Land Snail?",
+      options: ["Carolina Parakeet", "Bluebuck", "Jamaican Giant Galliwasp", "Bermuda Land Snail"],
+      answer: "Bermuda Land Snail"
+    },
+    {
+      question: "Which extinct species was a flightless seabird?",
+      options: ["Great Auk", "Labrador Duck", "Falkland Islands Wolf", "Norfolk Island Kaka"],
+      answer: "Great Auk"
+    },
+    {
+      question: "Which extinct mammal was the only native species of the Falkland Islands?",
+      options: ["Falkland Islands Wolf", "Northern White Rhinoceros", "Bluebuck", "Jamaican Giant Galliwasp"],
+      answer: "Falkland Islands Wolf"
+    },
+    {
+      question: "Which species of tortoise was last seen on Pinta Island?",
+      options: ["Giant Galapagos Tortoise", "Pinta Island Tortoise", "Carolina Parakeet", "Round Island Burrowing Boa"],
+      answer: "Pinta Island Tortoise"
+    },
+    {
+      question: "What caused the extinction of the passenger pigeon?",
+      options: ["Hunting", "Climate change", "Habitat loss", "Predators"],
+      answer: "Hunting"
+    },
+    {
+      question: "Which animal is considered the world's rarest cat species?",
+      options: ["Pallas's cat", "Amur Leopard", "Jaguar", "Iriomote cat"],
+      answer: "Iriomote cat"
+    },
+    {
+      question: "What was the main cause of extinction for the Tasmanian Tiger?",
+      options: ["Habitat loss", "Hunting", "Climate change", "Disease"],
+      answer: "Hunting"
+    },
+    {
+      question: "Which species of whale is critically endangered with fewer than 50 individuals left?",
+      options: ["Beluga whale", "North Atlantic right whale", "Blue whale", "Fin whale"],
+      answer: "North Atlantic right whale"
+    },
+    {
+      question: "Which of the following birds is extinct in the wild?",
+      options: ["California condor", "Kakapo", "Golden eagle", "Peregrine falcon"],
+      answer: "California condor"
+    },
+    {
+      question: "What is the primary cause of the decline of the orangutan population?",
+      options: ["Deforestation", "Hunting", "Climate change", "Poaching for pet trade"],
+      answer: "Deforestation"
+    },
+    {
+      question: "Which extinct mammal was native to Australia and is related to the wombat?",
+      options: ["Diprotodon", "Thylacine", "Tasmanian Devil", "Megalania"],
+      answer: "Diprotodon"
+    },
+    {
+      question: "What is the last known location where the Spix's Macaw was sighted before becoming extinct in the wild?",
+      options: ["Brazil", "Argentina", "Peru", "Colombia"],
+      answer: "Brazil"
+    },
+    {
+      question: "Which of the following species was the first to be declared extinct due to human activity?",
+      options: ["Dodo", "Passenger Pigeon", "Great Auk", "Tasmanian Tiger"],
+      answer: "Dodo"
+    },
+    {
+      question: "Which species went extinct in the wild in 1994?",
+      options: ["Black-footed Ferret", "Tasmanian Tiger", "Caspian Tiger", "Baiji Dolphin"],
+      answer: "Baiji Dolphin"
+    },
+    {
+      question: "Which bird species was last seen in 1914?",
+      options: ["Passenger Pigeon", "Ivory-billed Woodpecker", "Carolina Parakeet", "Labrador Duck"],
+      answer: "Passenger Pigeon"
+    },
+    {
+      question: "The Dodo was native to which country?",
+      options: ["Mauritius", "Madagascar", "Australia", "New Zealand"],
+      answer: "Mauritius"
+    },
+    {
+      question: "Which of the following species was a herbivore?",
+      options: ["Mastodon", "Sabre-toothed Tiger", "Woolly Mammoth", "All of the above"],
+      answer: "All of the above"
+    },
+    {
+      question: "Which extinct species was known for its large, colorful beak?",
+      options: ["Great Auk", "Passenger Pigeon", "Ivory-billed Woodpecker", "Haast's Eagle"],
+      answer: "Ivory-billed Woodpecker"
+    },
+    {
+      question: "Which of these animals was hunted to extinction due to its fur?",
+      options: ["Passenger Pigeon", "Sea Mink", "Tasmanian Tiger", "Pinta Island Tortoise"],
+      answer: "Sea Mink"
+    },
+    {
+      question: "In which year was the last recorded sighting of the Tasmanian Tiger?",
+      options: ["1936", "1912", "1960", "1944"],
+      answer: "1936"
+    },
+    {
+      question: "Which extinct species is considered the most famous example of human-induced extinction?",
+      options: ["Dodo", "Great Auk", "Woolly Mammoth", "Sabre-toothed Tiger"],
+      answer: "Dodo"
+    },
+    {
+      question: "The Ivory-billed Woodpecker was once found in which region?",
+      options: ["South Eastern United States", "South America", "Asia", "Australia"],
+      answer: "South Eastern United States"
+    },
+    {
+      question: "What was the primary cause of the extinction of the Passenger Pigeon?",
+      options: ["Hunting and habitat destruction", "Disease", "Climate change", "Predators"],
+      answer: "Hunting and habitat destruction"
+    },
+  ];
+
+  let score = 0;
+  let currentQuestions = [];
+
+  // Function to shuffle and select a random set of questions
+  function getRandomQuestions() {
+    const shuffled = allQuestions.sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, 5); // Display 5 random questions
+  }
+
+  // Display a random set of questions
+  function displayQuiz() {
+    const quizContainer = document.getElementById('quiz');
+    quizContainer.innerHTML = '';
+    currentQuestions = getRandomQuestions();  // Randomize questions for the quiz
+    currentQuestions.forEach((question, index) => {
+      const questionElement = document.createElement('div');
+      questionElement.classList.add('question');
+      questionElement.innerHTML = `  
+        <p><strong>${index + 1}. ${question.question}</strong></p>
+        <div class="options">
+          ${question.options.map((option, i) => `
+            <label>
+              <input type="radio" name="question${index}" value="${option}">
+              ${option}
+            </label>
+          `).join('')}
+        </div>
+      `;
+      quizContainer.appendChild(questionElement);
+    });
+  }
+
+  // Check answers and calculate the score
+  function submitQuiz() {
+    score = 0;
+    currentQuestions.forEach((question, index) => {
+      const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
+      if (selectedOption && selectedOption.value === question.answer) {
+        score++;
+      }
+    });
+    document.getElementById('score').textContent = `Your Score: ${score} / ${currentQuestions.length}`;
+  }
+
+  // Call the displayQuiz function to show questions
+  displayQuiz();
+</script>
+
+</body>
+</html>

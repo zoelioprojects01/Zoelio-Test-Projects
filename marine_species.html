@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Endangered Marine Species</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2f5d3a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .species-info {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .species-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #2f5d3a;
+        }
+
+        .species-info p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        .species-info button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .species-info button:hover {
+            background-color: #45a049;
+        }
+
+        .species-info div {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .species-info.active div {
+            display: block;
+        }
+
+        .species-info button:focus {
+            outline: none;
+        }
+
+        /* Image Styling */
+        .species-info img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Endangered Marine Species</h1>
+    </header>
+
+    <!-- Vaquita -->
+    <section class="species-info" id="vaquita">
+        <h2>Vaquita</h2>
+        <button onclick="toggleVisibility('vaquita')" aria-expanded="false" aria-controls="vaquita-details">View Details</button>
+        <div id="vaquita-details">
+            <img src="endangered/marine/vaquita.jpg" alt="Vaquita" loading="lazy">
+            <p><strong>Scientific Name:</strong> Phocoena sinus</p>
+            <p><strong>Habitat:</strong> Shallow coastal waters</p>
+            <p><strong>Current Population:</strong> Less than 10 individuals</p>
+            <p><strong>Subregion:</strong> Northern Gulf of California</p>
+            <p><strong>Cause of Endangerment:</strong> Bycatch in illegal fishing nets (gillnets)</p>
+        </div>
+    </section>
+
+    <!-- Hawksbill Sea Turtle -->
+    <section class="species-info" id="hawksbill-sea-turtle">
+        <h2>Hawksbill Sea Turtle</h2>
+        <button onclick="toggleVisibility('hawksbill-sea-turtle')" aria-expanded="false" aria-controls="hawksbill-sea-turtle-details">View Details</button>
+        <div id="hawksbill-sea-turtle-details">
+            <img src="endangered/marine/hawksbill-sea-turtle.jpg" alt="Hawksbill Sea Turtle" loading="lazy">
+            <p><strong>Scientific Name:</strong> Eretmochelys imbricata</p>
+            <p><strong>Habitat:</strong> Coral reefs</p>
+            <p><strong>Current Population:</strong> ~15,000 nesting females</p>
+            <p><strong>Subregion:</strong> Tropical Atlantic, Pacific, and Indian Oceans</p>
+            <p><strong>Cause of Endangerment:</strong> Illegal shell trade, habitat loss</p>
+        </div>
+    </section>
+
+    <!-- North Atlantic Right Whale -->
+    <section class="species-info" id="north-atlantic-right-whale">
+        <h2>North Atlantic Right Whale</h2>
+        <button onclick="toggleVisibility('north-atlantic-right-whale')" aria-expanded="false" aria-controls="north-atlantic-right-whale-details">View Details</button>
+        <div id="north-atlantic-right-whale-details">
+            <img src="endangered/marine/north-atlantic-right-whale.jpg" alt="North Atlantic Right Whale" loading="lazy">
+            <p><strong>Scientific Name:</strong> Eubalaena glacialis</p>
+            <p><strong>Habitat:</strong> Coastal waters of the North Atlantic</p>
+            <p><strong>Current Population:</strong> ~340 individuals</p>
+            <p><strong>Subregion:</strong> Eastern seaboard of North America</p>
+            <p><strong>Cause of Endangerment:</strong> Ship strikes, entanglement in fishing gear</p>
+        </div>
+    </section>
+
+    <!-- Blue Whale -->
+    <section class="species-info" id="blue-whale">
+        <h2>Blue Whale</h2>
+        <button onclick="toggleVisibility('blue-whale')" aria-expanded="false" aria-controls="blue-whale-details">View Details</button>
+        <div id="blue-whale-details">
+            <img src="endangered/marine/blue-whale.jpg" alt="Blue Whale" loading="lazy">
+            <p><strong>Scientific Name:</strong> Balaenoptera musculus</p>
+            <p><strong>Habitat:</strong> Open oceans worldwide</p>
+            <p><strong>Current Population:</strong> ~10,000–25,000</p>
+            <p><strong>Subregion:</strong> Global</p>
+            <p><strong>Cause of Endangerment:</strong> Ship collisions, past commercial whaling</p>
+        </div>
+    </section>
+
+    <!-- Giant Manta Ray -->
+    <section class="species-info" id="giant-manta-ray">
+        <h2>Giant Manta Ray</h2>
+        <button onclick="toggleVisibility('giant-manta-ray')" aria-expanded="false" aria-controls="giant-manta-ray-details">View Details</button>
+        <div id="giant-manta-ray-details">
+            <img src="endangered/marine/giant-manta-ray.jpg" alt="Giant Manta Ray" loading="lazy">
+            <p><strong>Scientific Name:</strong> Mobula birostris</p>
+            <p><strong>Habitat:</strong> Tropical, subtropical oceans</p>
+            <p><strong>Current Population:</strong> Vulnerable, population declining</p>
+            <p><strong>Subregion:</strong> Indo-Pacific and Atlantic</p>
+            <p><strong>Cause of Endangerment:</strong> Overfishing, gillnets, climate change</p>
+        </div>
+    </section>
+
+    <!-- Chinese Paddlefish -->
+    <section class="species-info" id="chinese-paddlefish">
+        <h2>Chinese Paddlefish</h2>
+        <button onclick="toggleVisibility('chinese-paddlefish')" aria-expanded="false" aria-controls="chinese-paddlefish-details">View Details</button>
+        <div id="chinese-paddlefish-details">
+            <img src="endangered/marine/chinese-paddlefish.jpg" alt="Chinese Paddlefish" loading="lazy">
+            <p><strong>Scientific Name:</strong> Psephurus gladius</p>
+            <p><strong>Habitat:</strong> Yangtze River</p>
+            <p><strong>Current Population:</strong> Functionally extinct (0)</p>
+            <p><strong>Subregion:</strong> China</p>
+            <p><strong>Cause of Endangerment:</strong> Dam construction, overfishing</p>
+        </div>
+    </section>
+
+    <!-- Dugong -->
+    <section class="species-info" id="dugong">
+        <h2>Dugong</h2>
+        <button onclick="toggleVisibility('dugong')" aria-expanded="false" aria-controls="dugong-details">View Details</button>
+        <div id="dugong-details">
+            <img src="endangered/marine/dugong.jpg" alt="Dugong" loading="lazy">
+            <p><strong>Scientific Name:</strong> Dugong dugon</p>
+            <p><strong>Habitat:</strong> Seagrass beds in coastal waters</p>
+            <p><strong>Current Population:</strong> Around 100,000 globally, critically endangered in East Africa</p>
+            <p><strong>Subregion:</strong> Indian Ocean, western Pacific</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat destruction, hunting</p>
+        </div>
+    </section>
+
+    <!-- Scalloped Hammerhead Shark -->
+    <section class="species-info" id="scalloped-hammerhead-shark">
+        <h2>Scalloped Hammerhead Shark</h2>
+        <button onclick="toggleVisibility('scalloped-hammerhead-shark')" aria-expanded="false" aria-controls="scalloped-hammerhead-shark-details">View Details</button>
+        <div id="scalloped-hammerhead-shark-details">
+            <img src="endangered/marine/scalloped-hammerhead-shark.jpg" alt="Scalloped Hammerhead Shark" loading="lazy">
+            <p><strong>Scientific Name:</strong> Sphyrna lewini</p>
+            <p><strong>Habitat:</strong> Coastal warm waters</p>
+            <p><strong>Current Population:</strong> Critically endangered, population declining</p>
+            <p><strong>Subregion:</strong> Worldwide tropics</p>
+            <p><strong>Cause of Endangerment:</strong> Shark finning, overfishing</p>
+        </div>
+    </section>
+
+    <!-- Leatherback Sea Turtle -->
+    <section class="species-info" id="leatherback-sea-turtle">
+        <h2>Leatherback Sea Turtle</h2>
+        <button onclick="toggleVisibility('leatherback-sea-turtle')" aria-expanded="false" aria-controls="leatherback-sea-turtle-details">View Details</button>
+        <div id="leatherback-sea-turtle-details">
+            <img src="endangered/marine/leatherback-sea-turtle.jpg" alt="Leatherback Sea Turtle" loading="lazy">
+            <p><strong>Scientific Name:</strong> Dermochelys coriacea</p>
+            <p><strong>Habitat:</strong> Open oceans and tropical beaches</p>
+            <p><strong>Current Population:</strong> ~34,000 nesting females</p>
+            <p><strong>Subregion:</strong> Pacific, Atlantic, Indian Oceans</p>
+            <p><strong>Cause of Endangerment:</strong> Fishing gear, plastic ingestion</p>
+        </div>
+    </section>
+
+    <!-- European Eel -->
+    <section class="species-info" id="european-eel">
+        <h2>European Eel</h2>
+        <button onclick="toggleVisibility('european-eel')" aria-expanded="false" aria-controls="european-eel-details">View Details</button>
+        <div id="european-eel-details">
+            <img src="endangered/marine/european-eel.jpg" alt="European Eel" loading="lazy">
+            <p><strong>Scientific Name:</strong> Anguilla anguilla</p>
+            <p><strong>Habitat:</strong> Freshwater and marine</p>
+            <p><strong>Current Population:</strong> Critically endangered, population declining</p>
+            <p><strong>Subregion:</strong> European rivers to Sargasso Sea</p>
+            <p><strong>Cause of Endangerment:</strong> Dams, overfishing, pollution</p>
+        </div>
+    </section>
+
+    <!-- Banggai Cardinalfish -->
+    <section class="species-info" id="banggai-cardinalfish">
+        <h2>Banggai Cardinalfish</h2>
+        <button onclick="toggleVisibility('banggai-cardinalfish')" aria-expanded="false" aria-controls="banggai-cardinalfish-details">View Details</button>
+        <div id="banggai-cardinalfish-details">
+            <img src="endangered/marine/banggai-cardinalfish.jpg" alt="Banggai Cardinalfish" loading="lazy">
+            <p><strong>Scientific Name:</strong> Pterapogon kauderni</p>
+            <p><strong>Habitat:</strong> Coral reefs</p>
+            <p><strong>Current Population:</strong> Fewer than 2 million, declining</p>
+            <p><strong>Subregion:</strong> Indonesia</p>
+            <p><strong>Cause of Endangerment:</strong> Aquarium trade, habitat destruction</p>
+        </div>
+    </section>
+
+    <!-- Galápagos Sea Lion -->
+    <section class="species-info" id="galapagos-sea-lion">
+        <h2>Galápagos Sea Lion</h2>
+        <button onclick="toggleVisibility('galapagos-sea-lion')" aria-expanded="false" aria-controls="galapagos-sea-lion-details">View Details</button>
+        <div id="galapagos-sea-lion-details">
+            <img src="endangered/marine/galapagos-sea-lion.jpg" alt="Galápagos Sea Lion" loading="lazy">
+            <p><strong>Scientific Name:</strong> Zalophus wollebaeki</p>
+            <p><strong>Habitat:</strong> Rocky beaches and coastal areas</p>
+            <p><strong>Current Population:</strong> ~20,000–50,000</p>
+            <p><strong>Subregion:</strong> Galápagos Islands</p>
+            <p><strong>Cause of Endangerment:</strong> Disease, climate change, fishing</p>
+        </div>
+    </section>
+
+    <!-- Coelacanth -->
+    <section class="species-info" id="coelacanth">
+        <h2>Coelacanth</h2>
+        <button onclick="toggleVisibility('coelacanth')" aria-expanded="false" aria-controls="coelacanth-details">View Details</button>
+        <div id="coelacanth-details">
+            <img src="endangered/marine/coelacanth.jpg" alt="Coelacanth" loading="lazy">
+            <p><strong>Scientific Name:</strong> Latimeria chalumnae</p>
+            <p><strong>Habitat:</strong> Deep sea</p>
+            <p><strong>Current Population:</strong> A few hundred known</p>
+            <p><strong>Subregion:</strong> Indian Ocean</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat disturbance, accidental capture</p>
+        </div>
+    </section>
+
+    <!-- Southern Bluefin Tuna -->
+    <section class="species-info" id="southern-bluefin-tuna">
+        <h2>Southern Bluefin Tuna</h2>
+        <button onclick="toggleVisibility('southern-bluefin-tuna')" aria-expanded="false" aria-controls="southern-bluefin-tuna-details">View Details</button>
+        <div id="southern-bluefin-tuna-details">
+            <img src="endangered/marine/southern-bluefin-tuna.jpg" alt="Southern Bluefin Tuna" loading="lazy">
+            <p><strong>Scientific Name:</strong> Thunnus maccoyii</p>
+            <p><strong>Habitat:</strong> Open ocean</p>
+            <p><strong>Current Population:</strong> <13% of historical levels</p>
+            <p><strong>Subregion:</strong> Southern Hemisphere oceans</p>
+            <p><strong>Cause of Endangerment:</strong> Overfishing</p>
+        </div>
+    </section>
+
+    <!-- Smalltooth Sawfish -->
+    <section class="species-info" id="smalltooth-sawfish">
+        <h2>Smalltooth Sawfish</h2>
+        <button onclick="toggleVisibility('smalltooth-sawfish')" aria-expanded="false" aria-controls="smalltooth-sawfish-details">View Details</button>
+        <div id="smalltooth-sawfish-details">
+            <img src="endangered/marine/smalltooth-sawfish.jpg" alt="Smalltooth Sawfish" loading="lazy">
+            <p><strong>Scientific Name:</strong> Pristis pectinata</p>
+            <p><strong>Habitat:</strong> Shallow coastal and estuarine waters</p>
+            <p><strong>Current Population:</strong> Fewer than 1,000 individuals</p>
+            <p><strong>Subregion:</strong> Western Atlantic, Gulf of Mexico</p>
+            <p><strong>Cause of Endangerment:</strong> Bycatch, habitat degradation</p>
+        </div>
+    </section>
+
+<script>
+    function goBack() {
+        if (window.history.length > 1) {
+            window.history.back();
+        } else {
+            window.location.href = 'index.html';
+        }
+    }
+
+    function toggleVisibility(id) {
+        const section = document.getElementById(id);
+        const button = section.querySelector('button');
+        section.classList.toggle('active');
+        button.setAttribute('aria-expanded', section.classList.contains('active'));
+    }
+</script>
+<div style="margin: 20px;">
+    <button onclick="goBack()" style="padding: 10px 20px; background-color: #2f5d3a; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        ← Back
+    </button>
+</div>
+</body>
+
+</html>

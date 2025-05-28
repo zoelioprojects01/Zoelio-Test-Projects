@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Endangered Species of Asia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2f5d3a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .species-info {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .species-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #2f5d3a;
+        }
+
+        .species-info p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        .species-info button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .species-info button:hover {
+            background-color: #45a049;
+        }
+
+        .species-info div {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .species-info.active div {
+            display: block;
+        }
+
+        .species-info button:focus {
+            outline: none;
+        }
+
+        /* Image Styling */
+        .species-info img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Endangered Species of Asia</h1>
+    </header>
+
+    <!-- Snow Leopard -->
+    <section class="species-info" id="snow-leopard">
+        <h2>Snow Leopard</h2>
+        <button onclick="toggleVisibility('snow-leopard')" aria-expanded="false" aria-controls="snow-leopard-details">View Details</button>
+        <div id="snow-leopard-details">
+            <img src="endangered/asia/snow-leopard.jpg" alt="Snow Leopard" loading="lazy">
+            <p><strong>Scientific Name:</strong> Panthera uncia</p>
+            <p><strong>Habitat:</strong> Alpine and subalpine zones at elevations of 3,000–4,500 meters</p>
+            <p><strong>Current Population:</strong> Fewer than 10,000 mature individuals</p>
+            <p><strong>Subregion:</strong> Central and South Asia (e.g., Himalayas, Tien Shan, Altai Mountains)</p>
+            <p><strong>Cause of Endangerment:</strong> Poaching, habitat destruction, retaliatory killings, and illegal trade</p>
+        </div>
+    </section>
+
+    <!-- Javan Rhinoceros -->
+    <section class="species-info" id="javan-rhinoceros">
+        <h2>Javan Rhinoceros</h2>
+        <button onclick="toggleVisibility('javan-rhinoceros')" aria-expanded="false" aria-controls="javan-rhinoceros-details">View Details</button>
+        <div id="javan-rhinoceros-details">
+            <img src="endangered/asia/javan-rhinoceros.jpg" alt="Javan Rhinoceros" loading="lazy">
+            <p><strong>Scientific Name:</strong> Rhinoceros sondaicus</p>
+            <p><strong>Habitat:</strong> Lowland tropical rainforests</p>
+            <p><strong>Current Population:</strong> Approximately 80 individuals</p>
+            <p><strong>Subregion:</strong> Western Java, Indonesia</p>
+            <p><strong>Cause of Endangerment:</strong> Poaching, habitat loss, and natural disasters</p>
+        </div>
+    </section>
+
+    <!-- Yangtze Giant Softshell Turtle -->
+    <section class="species-info" id="yangtze-giant-softshell-turtle">
+        <h2>Yangtze Giant Softshell Turtle</h2>
+        <button onclick="toggleVisibility('yangtze-giant-softshell-turtle')" aria-expanded="false" aria-controls="yangtze-giant-softshell-turtle-details">View Details</button>
+        <div id="yangtze-giant-softshell-turtle-details">
+            <img src="endangered/asia/yangtze-giant-softshell-turtle.jpg" alt="Yangtze Giant Softshell Turtle" loading="lazy">
+            <p><strong>Scientific Name:</strong> Rafetus swinhoei</p>
+            <p><strong>Habitat:</strong> Freshwater lakes and rivers</p>
+            <p><strong>Current Population:</strong> 4 known individuals</p>
+            <p><strong>Subregion:</strong> China</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat destruction, overexploitation, and pollution</p>
+        </div>
+    </section>
+
+    <!-- Bengal Tiger -->
+    <section class="species-info" id="bengal-tiger">
+        <h2>Bengal Tiger</h2>
+        <button onclick="toggleVisibility('bengal-tiger')" aria-expanded="false" aria-controls="bengal-tiger-details">View Details</button>
+        <div id="bengal-tiger-details">
+            <img src="endangered/asia/bengal-tiger.jpg" alt="Bengal Tiger" loading="lazy">
+            <p><strong>Scientific Name:</strong> Panthera tigris tigris</p>
+            <p><strong>Habitat:</strong> Tropical forests, grasslands, and mangroves</p>
+            <p><strong>Current Population:</strong> Fewer than 2,500 individuals</p>
+            <p><strong>Subregion:</strong> India, Bangladesh, Nepal, Bhutan</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, poaching, and human-wildlife conflict</p>
+        </div>
+    </section>
+
+    <!-- Saiga Antelope -->
+    <section class="species-info" id="saiga-antelope">
+        <h2>Saiga Antelope</h2>
+        <button onclick="toggleVisibility('saiga-antelope')" aria-expanded="false" aria-controls="saiga-antelope-details">View Details</button>
+        <div id="saiga-antelope-details">
+            <img src="endangered/asia/saiga-antelope.jpg" alt="Saiga Antelope" loading="lazy">
+            <p><strong>Scientific Name:</strong> Saiga tatarica</p>
+            <p><strong>Habitat:</strong> Steppes and semi-arid regions</p>
+            <p><strong>Current Population:</strong> Less than 50,000 individuals</p>
+            <p><strong>Subregion:</strong> Central Asia</p>
+            <p><strong>Cause of Endangerment:</strong> Hunting, disease, and habitat loss</p>
+        </div>
+    </section>
+
+    <!-- Sunda Pangolin -->
+    <section class="species-info" id="sunda-pangolin">
+        <h2>Sunda Pangolin</h2>
+        <button onclick="toggleVisibility('sunda-pangolin')" aria-expanded="false" aria-controls="sunda-pangolin-details">View Details</button>
+        <div id="sunda-pangolin-details">
+            <img src="endangered/asia/sunda-pangolin.jpg" alt="Sunda Pangolin" loading="lazy">
+            <p><strong>Scientific Name:</strong> Manis javanica</p>
+            <p><strong>Habitat:</strong> Tropical forests, woodlands, and savannas</p>
+            <p><strong>Current Population:</strong> Unknown, but severely declining</p>
+            <p><strong>Subregion:</strong> Southeast Asia</p>
+            <p><strong>Cause of Endangerment:</strong> Illegal poaching for meat and scales</p>
+        </div>
+    </section>
+
+    <!-- Indochinese Tiger -->
+    <section class="species-info" id="indochinese-tiger">
+        <h2>Indochinese Tiger</h2>
+        <button onclick="toggleVisibility('indochinese-tiger')" aria-expanded="false" aria-controls="indochinese-tiger-details">View Details</button>
+        <div id="indochinese-tiger-details">
+            <img src="endangered/asia/indochinese-tiger.jpg" alt="Indochinese Tiger" loading="lazy">
+            <p><strong>Scientific Name:</strong> Panthera tigris corbetti</p>
+            <p><strong>Habitat:</strong> Tropical and subtropical forests</p>
+            <p><strong>Current Population:</strong> Fewer than 350 individuals</p>
+            <p><strong>Subregion:</strong> Southeast Asia</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, poaching, and loss of prey</p>
+        </div>
+    </section>
+
+    <!-- Tapanuli Orangutan -->
+    <section class="species-info" id="tapanuli-orangutan">
+        <h2>Tapanuli Orangutan</h2>
+        <button onclick="toggleVisibility('tapanuli-orangutan')" aria-expanded="false" aria-controls="tapanuli-orangutan-details">View Details</button>
+        <div id="tapanuli-orangutan-details">
+            <img src="endangered/asia/tapanuli-orangutan.jpg" alt="Tapanuli Orangutan" loading="lazy">
+            <p><strong>Scientific Name:</strong> Pongo tapanuliensis</p>
+            <p><strong>Habitat:</strong> Tropical montane forests</p>
+            <p><strong>Current Population:</strong> Fewer than 800 individuals</p>
+            <p><strong>Subregion:</strong> Sumatra, Indonesia</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss and fragmentation due to palm oil plantations</p>
+        </div>
+    </section>
+
+    <!-- Red Panda -->
+    <section class="species-info" id="red-panda">
+        <h2>Red Panda</h2>
+        <button onclick="toggleVisibility('red-panda')" aria-expanded="false" aria-controls="red-panda-details">View Details</button>
+        <div id="red-panda-details">
+            <img src="endangered/asia/red-panda.jpg" alt="Red Panda" loading="lazy">
+            <p><strong>Scientific Name:</strong> Ailurus fulgens</p>
+            <p><strong>Habitat:</strong> Temperate forests with bamboo</p>
+            <p><strong>Current Population:</strong> Estimated at 10,000 individuals</p>
+            <p><strong>Subregion:</strong> Himalayas and mountain ranges of China, Nepal, and India</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, poaching, and fragmentation</p>
+        </div>
+    </section>
+
+    <!-- Asian Elephant -->
+    <section class="species-info" id="asian-elephant">
+        <h2>Asian Elephant</h2>
+        <button onclick="toggleVisibility('asian-elephant')" aria-expanded="false" aria-controls="asian-elephant-details">View Details</button>
+        <div id="asian-elephant-details">
+            <img src="endangered/asia/asian-elephant.jpg" alt="Asian Elephant" loading="lazy">
+            <p><strong>Scientific Name:</strong> Elephas maximus</p>
+            <p><strong>Habitat:</strong> Forests, grasslands, and swamps</p>
+            <p><strong>Current Population:</strong> Fewer than 50,000 individuals</p>
+            <p><strong>Subregion:</strong> Southeast Asia, India, Sri Lanka</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, human-elephant conflict, and poaching for ivory</p>
+        </div>
+    </section>
+
+    <!-- Vaquita -->
+    <section class="species-info" id="vaquita">
+        <h2>Vaquita</h2>
+        <button onclick="toggleVisibility('vaquita')" aria-expanded="false" aria-controls="vaquita-details">View Details</button>
+        <div id="vaquita-details">
+            <img src="endangered/asia/vaquita.jpg" alt="Vaquita" loading="lazy">
+            <p><strong>Scientific Name:</strong> Phocoena sinus</p>
+            <p><strong>Habitat:</strong> Shallow waters in the northern part of the Gulf of California</p>
+            <p><strong>Current Population:</strong> Fewer than 10 individuals</p>
+            <p><strong>Subregion:</strong> Mexico (Gulf of California)</p>
+            <p><strong>Cause of Endangerment:</strong> Bycatch in illegal gillnets used for fishing totoaba</p>
+        </div>
+    </section>
+
+    <!-- Chinese Alligator -->
+    <section class="species-info" id="chinese-alligator">
+        <h2>Chinese Alligator</h2>
+        <button onclick="toggleVisibility('chinese-alligator')" aria-expanded="false" aria-controls="chinese-alligator-details">View Details</button>
+        <div id="chinese-alligator-details">
+            <img src="endangered/asia/chinese-alligator.jpg" alt="Chinese Alligator" loading="lazy">
+            <p><strong>Scientific Name:</strong> Alligator sinensis</p>
+            <p><strong>Habitat:</strong> Freshwater lakes and rivers</p>
+            <p><strong>Current Population:</strong> Around 150 individuals</p>
+            <p><strong>Subregion:</strong> Eastern China</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, pollution, and hunting for skin</p>
+        </div>
+    </section>
+
+    <!-- Mekong Giant Catfish -->
+    <section class="species-info" id="mekong-giant-catfish">
+        <h2>Mekong Giant Catfish</h2>
+        <button onclick="toggleVisibility('mekong-giant-catfish')" aria-expanded="false" aria-controls="mekong-giant-catfish-details">View Details</button>
+        <div id="mekong-giant-catfish-details">
+            <img src="endangered/asia/mekong-giant-catfish.jpg" alt="Mekong Giant Catfish" loading="lazy">
+            <p><strong>Scientific Name:</strong> Pangasianodon gigas</p>
+            <p><strong>Habitat:</strong> Rivers and freshwater lakes</p>
+            <p><strong>Current Population:</strong> Critically low, population is rapidly declining</p>
+            <p><strong>Subregion:</strong> Mekong River, Southeast Asia</p>
+            <p><strong>Cause of Endangerment:</strong> Overfishing, habitat degradation, and damming of rivers</p>
+        </div>
+    </section>
+
+    <!-- Gharial -->
+    <section class="species-info" id="gharial">
+        <h2>Gharial</h2>
+        <button onclick="toggleVisibility('gharial')" aria-expanded="false" aria-controls="gharial-details">View Details</button>
+        <div id="gharial-details">
+            <img src="endangered/asia/gharial.jpg" alt="Gharial" loading="lazy">
+            <p><strong>Scientific Name:</strong> Gavialis gangeticus</p>
+            <p><strong>Habitat:</strong> River systems with fast-moving waters and sandy banks</p>
+            <p><strong>Current Population:</strong> Fewer than 200 individuals</p>
+            <p><strong>Subregion:</strong> India, Nepal</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, water pollution, and poaching</p>
+        </div>
+    </section>
+
+    <!-- Kashmir Stag (Hangul) -->
+    <section class="species-info" id="kashmir-stag">
+        <h2>Kashmir Stag (Hangul)</h2>
+        <button onclick="toggleVisibility('kashmir-stag')" aria-expanded="false" aria-controls="kashmir-stag-details">View Details</button>
+        <div id="kashmir-stag-details">
+            <img src="endangered/asia/kashmir-stag.jpg" alt="Kashmir Stag (Hangul)" loading="lazy">
+            <p><strong>Scientific Name:</strong> Cervus hanglu</p>
+            <p><strong>Habitat:</strong> Temperate forests in mountainous regions</p>
+            <p><strong>Current Population:</strong> Less than 200 individuals</p>
+            <p><strong>Subregion:</strong> Kashmir Valley, India</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss and poaching</p>
+        </div>
+    </section>
+
+<script>
+    function goBack() {
+        if (window.history.length > 1) {
+            window.history.back();
+        } else {
+            window.location.href = 'index.html';
+        }
+    }
+
+    function toggleVisibility(id) {
+        const section = document.getElementById(id);
+        const button = section.querySelector('button');
+        section.classList.toggle('active');
+        button.setAttribute('aria-expanded', section.classList.contains('active'));
+    }
+</script>
+<div style="margin: 20px;">
+    <button onclick="goBack()" style="padding: 10px 20px; background-color: #2f5d3a; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        ← Back
+    </button>
+</div>
+</body>
+
+</html>

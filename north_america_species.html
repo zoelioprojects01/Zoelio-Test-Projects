@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Endangered Species of North America</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2f5d3a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .species-info {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .species-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #2f5d3a;
+        }
+
+        .species-info p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        .species-info button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .species-info button:hover {
+            background-color: #45a049;
+        }
+
+        .species-info div {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .species-info.active div {
+            display: block;
+        }
+
+        .species-info button:focus {
+            outline: none;
+        }
+
+        /* Image Styling */
+        .species-info img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Endangered Species of North America</h1>
+    </header>
+
+    <!-- California Condor -->
+    <section class="species-info" id="california-condor">
+        <h2>California Condor</h2>
+        <button onclick="toggleVisibility('california-condor')" aria-expanded="false" aria-controls="california-condor-details">View Details</button>
+        <div id="california-condor-details">
+            <img src="endangered/north-america/california-condor.jpg" alt="California Condor" loading="lazy">
+            <p><strong>Scientific Name:</strong> Gymnogyps californianus</p>
+            <p><strong>Habitat:</strong> Rocky hills and mountains, typically near open grasslands</p>
+            <p><strong>Current Population:</strong> Around 450 individuals</p>
+            <p><strong>Subregion:</strong> Southwestern United States (California, Arizona, Utah)</p>
+            <p><strong>Cause of Endangerment:</strong> Lead poisoning, habitat destruction, and microtrash ingestion</p>
+        </div>
+    </section>
+
+    <!-- Kemp’s Ridley Sea Turtle -->
+    <section class="species-info" id="kemps-ridley-sea-turtle">
+        <h2>Kemp’s Ridley Sea Turtle</h2>
+        <button onclick="toggleVisibility('kemps-ridley-sea-turtle')" aria-expanded="false" aria-controls="kemps-ridley-sea-turtle-details">View Details</button>
+        <div id="kemps-ridley-sea-turtle-details">
+            <img src="endangered/north-america/kemps-ridley-sea-turtle.jpg" alt="Kemp’s Ridley Sea Turtle" loading="lazy">
+            <p><strong>Scientific Name:</strong> Lepidochelys kempii</p>
+            <p><strong>Habitat:</strong> Shallow coastal waters and beaches</p>
+            <p><strong>Current Population:</strong> Estimated at about 10,000 nesting females</p>
+            <p><strong>Subregion:</strong> Gulf of Mexico</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, climate change, and accidental capture in fishing gear</p>
+        </div>
+    </section>
+
+    <!-- Whooping Crane -->
+    <section class="species-info" id="whooping-crane">
+        <h2>Whooping Crane</h2>
+        <button onclick="toggleVisibility('whooping-crane')" aria-expanded="false" aria-controls="whooping-crane-details">View Details</button>
+        <div id="whooping-crane-details">
+            <img src="endangered/north-america/whooping-crane.jpg" alt="Whooping Crane" loading="lazy">
+            <p><strong>Scientific Name:</strong> Grus americana</p>
+            <p><strong>Habitat:</strong> Wetlands, grasslands, and prairies</p>
+            <p><strong>Current Population:</strong> Approximately 600 individuals</p>
+            <p><strong>Subregion:</strong> Central North America (primarily in the United States and Canada)</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, hunting, and disturbance during migration</p>
+        </div>
+    </section>
+
+    <!-- American Bison -->
+    <section class="species-info" id="american-bison">
+        <h2>American Bison</h2>
+        <button onclick="toggleVisibility('american-bison')" aria-expanded="false" aria-controls="american-bison-details">View Details</button>
+        <div id="american-bison-details">
+            <img src="endangered/north-america/american-bison.jpg" alt="American Bison" loading="lazy">
+            <p><strong>Scientific Name:</strong> Bison bison</p>
+            <p><strong>Habitat:</strong> Grasslands and prairies</p>
+            <p><strong>Current Population:</strong> Over 30,000 in conservation herds</p>
+            <p><strong>Subregion:</strong> North America (United States, Canada)</p>
+            <p><strong>Cause of Endangerment:</strong> Overhunting and habitat destruction</p>
+        </div>
+    </section>
+
+    <!-- Eastern Box Turtle -->
+    <section class="species-info" id="eastern-box-turtle">
+        <h2>Eastern Box Turtle</h2>
+        <button onclick="toggleVisibility('eastern-box-turtle')" aria-expanded="false" aria-controls="eastern-box-turtle-details">View Details</button>
+        <div id="eastern-box-turtle-details">
+            <img src="endangered/north-america/eastern-box-turtle.jpg" alt="Eastern Box Turtle" loading="lazy">
+            <p><strong>Scientific Name:</strong> Terrapene carolina carolina</p>
+            <p><strong>Habitat:</strong> Forests, meadows, and grasslands</p>
+            <p><strong>Current Population:</strong> Declining</p>
+            <p><strong>Subregion:</strong> Eastern United States</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat destruction, illegal pet trade, and road mortality</p>
+        </div>
+    </section>
+
+    <!-- Red Knot -->
+    <section class="species-info" id="red-knot">
+        <h2>Red Knot</h2>
+        <button onclick="toggleVisibility('red-knot')" aria-expanded="false" aria-controls="red-knot-details">View Details</button>
+        <div id="red-knot-details">
+            <img src="endangered/north-america/red-knot.jpg" alt="Red Knot" loading="lazy">
+            <p><strong>Scientific Name:</strong> Calidris canutus rufa</p>
+            <p><strong>Habitat:</strong> Coastal mudflats and beaches</p>
+            <p><strong>Current Population:</strong> Around 40,000 individuals</p>
+            <p><strong>Subregion:</strong> Eastern North America (migratory)</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, climate change, and food scarcity</p>
+        </div>
+    </section>
+
+    <!-- Pallid Sturgeon -->
+    <section class="species-info" id="pallid-sturgeon">
+        <h2>Pallid Sturgeon</h2>
+        <button onclick="toggleVisibility('pallid-sturgeon')" aria-expanded="false" aria-controls="pallid-sturgeon-details">View Details</button>
+        <div id="pallid-sturgeon-details">
+            <img src="endangered/north-america/pallid-sturgeon.jpg" alt="Pallid Sturgeon" loading="lazy">
+            <p><strong>Scientific Name:</strong> Scaphirhynchus albus</p>
+            <p><strong>Habitat:</strong> Large rivers and their floodplains</p>
+            <p><strong>Current Population:</strong> Fewer than 150 individuals</p>
+            <p><strong>Subregion:</strong> Mississippi River and its tributaries</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat alteration, pollution, and dams</p>
+        </div>
+    </section>
+
+    <!-- Florida Panther -->
+    <section class="species-info" id="florida-panther">
+        <h2>Florida Panther</h2>
+        <button onclick="toggleVisibility('florida-panther')" aria-expanded="false" aria-controls="florida-panther-details">View Details</button>
+        <div id="florida-panther-details">
+            <img src="endangered/north-america/florida-panther.jpg" alt="Florida Panther" loading="lazy">
+            <p><strong>Scientific Name:</strong> Puma concolor coryi</p>
+            <p><strong>Habitat:</strong> Forests, swamps, and grasslands</p>
+            <p><strong>Current Population:</strong> Around 120 individuals</p>
+            <p><strong>Subregion:</strong> Florida, USA</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, genetic problems, and vehicle collisions</p>
+        </div>
+    </section>
+
+    <!-- Black-footed Ferret -->
+    <section class="species-info" id="black-footed-ferret">
+        <h2>Black-footed Ferret</h2>
+        <button onclick="toggleVisibility('black-footed-ferret')" aria-expanded="false" aria-controls="black-footed-ferret-details">View Details</button>
+        <div id="black-footed-ferret-details">
+            <img src="endangered/north-america/black-footed-ferret.jpg" alt="Black-footed Ferret" loading="lazy">
+            <p><strong>Scientific Name:</strong> Mustela nigripes</p>
+            <p><strong>Habitat:</strong> Grasslands and prairies</p>
+            <p><strong>Current Population:</strong> Around 350 individuals</p>
+            <p><strong>Subregion:</strong> Great Plains (USA)</p>
+            <p><strong>Cause of Endangerment:</strong> Loss of prairie dog populations, habitat destruction, and disease</p>
+        </div>
+    </section>
+
+    <!-- Bachman’s Warbler -->
+    <section class="species-info" id="bachmans-warbler">
+        <h2>Bachman’s Warbler</h2>
+        <button onclick="toggleVisibility('bachmans-warbler')" aria-expanded="false" aria-controls="bachmans-warbler-details">View Details</button>
+        <div id="bachmans-warbler-details">
+            <img src="endangered/north-america/bachmans-warbler.jpg" alt="Bachman’s Warbler" loading="lazy">
+            <p><strong>Scientific Name:</strong> Vermivora bachmanii</p>
+            <p><strong>Habitat:</strong> Swamps, wetlands, and forests</p>
+            <p><strong>Current Population:</strong> Extinct in the wild</p>
+            <p><strong>Subregion:</strong> Southeastern United States</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss and degradation</p>
+        </div>
+    </section>
+
+    <!-- Gray Whale -->
+    <section class="species-info" id="gray-whale">
+        <h2>Gray Whale (Eastern North Pacific)</h2>
+        <button onclick="toggleVisibility('gray-whale')" aria-expanded="false" aria-controls="gray-whale-details">View Details</button>
+        <div id="gray-whale-details">
+            <img src="endangered/north-america/gray-whale.jpg" alt="Gray Whale" loading="lazy">
+            <p><strong>Scientific Name:</strong> Eschrichtius robustus</p>
+            <p><strong>Habitat:</strong> Coastal waters and shallow bays</p>
+            <p><strong>Current Population:</strong> Around 20,000 individuals</p>
+            <p><strong>Subregion:</strong> Eastern North Pacific</p>
+            <p><strong>Cause of Endangerment:</strong> Ship strikes, entanglement in fishing gear, and pollution</p>
+        </div>
+    </section>
+
+    <!-- Mexican Gray Wolf -->
+    <section class="species-info" id="mexican-gray-wolf">
+        <h2>Mexican Gray Wolf</h2>
+        <button onclick="toggleVisibility('mexican-gray-wolf')" aria-expanded="false" aria-controls="mexican-gray-wolf-details">View Details</button>
+        <div id="mexican-gray-wolf-details">
+            <img src="endangered/north-america/mexican-gray-wolf.jpg" alt="Mexican Gray Wolf" loading="lazy">
+            <p><strong>Scientific Name:</strong> Canis lupus baileyi</p>
+            <p><strong>Habitat:</strong> Forests and grasslands</p>
+            <p><strong>Current Population:</strong> Around 250 individuals</p>
+            <p><strong>Subregion:</strong> Southwestern U.S. and Mexico</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, hunting, and human-wildlife conflict</p>
+        </div>
+    </section>
+
+    <!-- Northern Right Whale -->
+    <section class="species-info" id="northern-right-whale">
+        <h2>Northern Right Whale</h2>
+        <button onclick="toggleVisibility('northern-right-whale')" aria-expanded="false" aria-controls="northern-right-whale-details">View Details</button>
+        <div id="northern-right-whale-details">
+            <img src="endangered/north-america/northern-right-whale.jpg" alt="Northern Right Whale" loading="lazy">
+            <p><strong>Scientific Name:</strong> Eubalaena glacialis</p>
+            <p><strong>Habitat:</strong> Coastal waters of the North Atlantic</p>
+            <p><strong>Current Population:</strong> Fewer than 350 individuals</p>
+            <p><strong>Subregion:</strong> North Atlantic Ocean</p>
+            <p><strong>Cause of Endangerment:</strong> Ship strikes, entanglement in fishing gear, and habitat disturbance</p>
+        </div>
+    </section>
+
+    <!-- American Alligator -->
+    <section class="species-info" id="american-alligator">
+        <h2>American Alligator</h2>
+        <button onclick="toggleVisibility('american-alligator')" aria-expanded="false" aria-controls="american-alligator-details">View Details</button>
+        <div id="american-alligator-details">
+            <img src="endangered/north-america/american-alligator.jpg" alt="American Alligator" loading="lazy">
+            <p><strong>Scientific Name:</strong> Alligator mississippiensis</p>
+            <p><strong>Habitat:</strong> Freshwater swamps, marshes, and rivers</p>
+            <p><strong>Current Population:</strong> Over 1 million individuals</p>
+            <p><strong>Subregion:</strong> Southeastern United States</p>
+            <p><strong>Cause of Endangerment:</strong> Overhunting (historically) and habitat loss</p>
+        </div>
+    </section>
+
+    <!-- Hawaiian Monk Seal -->
+    <section class="species-info" id="hawaiian-monk-seal">
+        <h2>Hawaiian Monk Seal</h2>
+        <button onclick="toggleVisibility('hawaiian-monk-seal')" aria-expanded="false" aria-controls="hawaiian-monk-seal-details">View Details</button>
+        <div id="hawaiian-monk-seal-details">
+            <img src="endangered/north-america/hawaiian-monk-seal.jpg" alt="Hawaiian Monk Seal" loading="lazy">
+            <p><strong>Scientific Name:</strong> Neomonachus schauinslandi</p>
+            <p><strong>Habitat:</strong> Coastal waters and beaches</p>
+            <p><strong>Current Population:</strong> Around 1,400 individuals</p>
+            <p><strong>Subregion:</strong> Hawaii, U.S.</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, entanglement, and disease</p>
+        </div>
+    </section>
+
+<script>
+    function goBack() {
+        if (window.history.length > 1) {
+            window.history.back();
+        } else {
+            window.location.href = 'index.html';
+        }
+    }
+
+    function toggleVisibility(id) {
+        const section = document.getElementById(id);
+        const button = section.querySelector('button');
+        section.classList.toggle('active');
+        button.setAttribute('aria-expanded', section.classList.contains('active'));
+    }
+</script>
+<div style="margin: 20px;">
+    <button onclick="goBack()" style="padding: 10px 20px; background-color: #2f5d3a; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        ← Back
+    </button>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Endangered Species of Europe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2f5d3a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .species-info {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .species-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #2f5d3a;
+        }
+
+        .species-info p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        .species-info button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .species-info button:hover {
+            background-color: #45a049;
+        }
+
+        .species-info div {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .species-info.active div {
+            display: block;
+        }
+
+        .species-info button:focus {
+            outline: none;
+        }
+
+        /* Image Styling */
+        .species-info img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Endangered Species of Europe</h1>
+    </header>
+
+    <!-- European Bison -->
+    <section class="species-info" id="european-bison">
+        <h2>European Bison</h2>
+        <button onclick="toggleVisibility('european-bison')" aria-expanded="false" aria-controls="european-bison-details">View Details</button>
+        <div id="european-bison-details">
+            <img src="endangered/europe/european-bison.jpg" alt="European Bison" loading="lazy">
+            <p><strong>Scientific Name:</strong> Bison bonasus</p>
+            <p><strong>Habitat:</strong> Forests and woodlands</p>
+            <p><strong>Current Population:</strong> Over 6,000 individuals</p>
+            <p><strong>Subregion:</strong> Eastern Europe (Poland, Belarus, Russia)</p>
+            <p><strong>Cause of Endangerment:</strong> Overhunting, habitat loss, and disease</p>
+        </div>
+    </section>
+
+    <!-- Iberian Lynx -->
+    <section class="species-info" id="iberian-lynx">
+        <h2>Iberian Lynx</h2>
+        <button onclick="toggleVisibility('iberian-lynx')" aria-expanded="false" aria-controls="iberian-lynx-details">View Details</button>
+        <div id="iberian-lynx-details">
+            <img src="endangered/europe/iberian-lynx.jpg" alt="Iberian Lynx" loading="lazy">
+            <p><strong>Scientific Name:</strong> Lynx pardinus</p>
+            <p><strong>Habitat:</strong> Scrublands, forests, and rocky hills</p>
+            <p><strong>Current Population:</strong> Around 400 individuals</p>
+            <p><strong>Subregion:</strong> Iberian Peninsula (Spain and Portugal)</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, prey depletion, and hunting</p>
+        </div>
+    </section>
+
+    <!-- European Wildcat -->
+    <section class="species-info" id="european-wildcat">
+        <h2>European Wildcat</h2>
+        <button onclick="toggleVisibility('european-wildcat')" aria-expanded="false" aria-controls="european-wildcat-details">View Details</button>
+        <div id="european-wildcat-details">
+            <img src="endangered/europe/european-wildcat.jpg" alt="European Wildcat" loading="lazy">
+            <p><strong>Scientific Name:</strong> Felis silvestris</p>
+            <p><strong>Habitat:</strong> Forests, grasslands, and scrublands</p>
+            <p><strong>Current Population:</strong> Around 10,000 individuals</p>
+            <p><strong>Subregion:</strong> Across Europe</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, hybridization with domestic cats, and persecution</p>
+        </div>
+    </section>
+
+    <!-- Mediterranean Monk Seal -->
+    <section class="species-info" id="mediterranean-monk-seal">
+        <h2>Mediterranean Monk Seal</h2>
+        <button onclick="toggleVisibility('mediterranean-monk-seal')" aria-expanded="false" aria-controls="mediterranean-monk-seal-details">View Details</button>
+        <div id="mediterranean-monk-seal-details">
+            <img src="endangered/europe/mediterranean-monk-seal.jpg" alt="Mediterranean Monk Seal" loading="lazy">
+            <p><strong>Scientific Name:</strong> Monachus monachus</p>
+            <p><strong>Habitat:</strong> Coastal caves and rocky shores</p>
+            <p><strong>Current Population:</strong> Estimated at around 700 individuals</p>
+            <p><strong>Subregion:</strong> Mediterranean Sea</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, pollution, and hunting</p>
+        </div>
+    </section>
+
+    <!-- European Sturgeon -->
+    <section class="species-info" id="european-sturgeon">
+        <h2>European Sturgeon</h2>
+        <button onclick="toggleVisibility('european-sturgeon')" aria-expanded="false" aria-controls="european-sturgeon-details">View Details</button>
+        <div id="european-sturgeon-details">
+            <img src="endangered/europe/european-sturgeon.jpg" alt="European Sturgeon" loading="lazy">
+            <p><strong>Scientific Name:</strong> Acipenser sturio</p>
+            <p><strong>Habitat:</strong> Coastal waters and large rivers</p>
+            <p><strong>Current Population:</strong> Fewer than 1,000 individuals</p>
+            <p><strong>Subregion:</strong> Western Europe (e.g., Gironde Estuary, France)</p>
+            <p><strong>Cause of Endangerment:</strong> Overfishing, habitat degradation, and pollution</p>
+        </div>
+    </section>
+
+    <!-- Alpine Ibex -->
+    <section class="species-info" id="alpine-ibex">
+        <h2>Alpine Ibex</h2>
+        <button onclick="toggleVisibility('alpine-ibex')" aria-expanded="false" aria-controls="alpine-ibex-details">View Details</button>
+        <div id="alpine-ibex-details">
+            <img src="endangered/europe/alpine-ibex.jpg" alt="Alpine Ibex" loading="lazy">
+            <p><strong>Scientific Name:</strong> Capra ibex</p>
+            <p><strong>Habitat:</strong> Rocky mountain slopes and high-altitude regions</p>
+            <p><strong>Current Population:</strong> Over 3,000 individuals</p>
+            <p><strong>Subregion:</strong> Alps (Switzerland, France, Italy)</p>
+            <p><strong>Cause of Endangerment:</strong> Overhunting and habitat loss</p>
+        </div>
+    </section>
+
+    <!-- Bearded Vulture -->
+    <section class="species-info" id="bearded-vulture">
+        <h2>Bearded Vulture</h2>
+        <button onclick="toggleVisibility('bearded-vulture')" aria-expanded="false" aria-controls="bearded-vulture-details">View Details</button>
+        <div id="bearded-vulture-details">
+            <img src="endangered/europe/bearded-vulture.jpg" alt="Bearded Vulture" loading="lazy">
+            <p><strong>Scientific Name:</strong> Gypaetus barbatus</p>
+            <p><strong>Habitat:</strong> High mountains and rocky cliffs</p>
+            <p><strong>Current Population:</strong> About 500 individuals in Europe</p>
+            <p><strong>Subregion:</strong> Pyrenees, Alps, and Mediterranean mountain ranges</p>
+            <p><strong>Cause of Endangerment:</strong> Poisoning, habitat disturbance, and human persecution</p>
+        </div>
+    </section>
+
+    <!-- Golden Eagle -->
+    <section class="species-info" id="golden-eagle">
+        <h2>Golden Eagle</h2>
+        <button onclick="toggleVisibility('golden-eagle')" aria-expanded="false" aria-controls="golden-eagle-details">View Details</button>
+        <div id="golden-eagle-details">
+            <img src="endangered/europe/golden-eagle.jpg" alt="Golden Eagle" loading="lazy">
+            <p><strong>Scientific Name:</strong> Aquila chrysaetos</p>
+            <p><strong>Habitat:</strong> Rocky mountains, forests, and open plains</p>
+            <p><strong>Current Population:</strong> Around 5,000 pairs in Europe</p>
+            <p><strong>Subregion:</strong> Across Europe</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, hunting, and poisoning</p>
+        </div>
+    </section>
+
+    <!-- European Turtle Dove -->
+    <section class="species-info" id="european-turtle-dove">
+        <h2>European Turtle Dove</h2>
+        <button onclick="toggleVisibility('european-turtle-dove')" aria-expanded="false" aria-controls="european-turtle-dove-details">View Details</button>
+        <div id="european-turtle-dove-details">
+            <img src="endangered/europe/european-turtle-dove.jpg" alt="European Turtle Dove" loading="lazy">
+            <p><strong>Scientific Name:</strong> Streptopelia turtur</p>
+            <p><strong>Habitat:</strong> Open woodlands, farmland, and scrublands</p>
+            <p><strong>Current Population:</strong> Fewer than 200,000 individuals</p>
+            <p><strong>Subregion:</strong> Southern Europe</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, hunting, and climate change</p>
+        </div>
+    </section>
+
+    <!-- Scotch Argus Butterfly -->
+    <section class="species-info" id="scotch-argus-butterfly">
+        <h2>Scotch Argus Butterfly</h2>
+        <button onclick="toggleVisibility('scotch-argus-butterfly')" aria-expanded="false" aria-controls="scotch-argus-butterfly-details">View Details</button>
+        <div id="scotch-argus-butterfly-details">
+            <img src="endangered/europe/scotch-argus-butterfly.jpg" alt="Scotch Argus Butterfly" loading="lazy">
+            <p><strong>Scientific Name:</strong> Erebia aethiops</p>
+            <p><strong>Habitat:</strong> Grassy meadows and heathlands</p>
+            <p><strong>Current Population:</strong> Vulnerable, population declining</p>
+            <p><strong>Subregion:</strong> United Kingdom and parts of Europe</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, agricultural intensification, and climate change</p>
+        </div>
+    </section>
+
+    <!-- Corsican Nuthatch -->
+    <section class="species-info" id="corsican-nuthatch">
+        <h2>Corsican Nuthatch</h2>
+        <button onclick="toggleVisibility('corsican-nuthatch')" aria-expanded="false" aria-controls="corsican-nuthatch-details">View Details</button>
+        <div id="corsican-nuthatch-details">
+            <img src="endangered/europe/corsican-nuthatch.jpg" alt="Corsican Nuthatch" loading="lazy">
+            <p><strong>Scientific Name:</strong> Sitta whiteheadi</p>
+            <p><strong>Habitat:</strong> Pine forests</p>
+            <p><strong>Current Population:</strong> About 1,500 individuals</p>
+            <p><strong>Subregion:</strong> Corsica, France</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss and fragmentation</p>
+        </div>
+    </section>
+
+    <!-- Cantabrian Chamois -->
+    <section class="species-info" id="cantabrian-chamois">
+        <h2>Cantabrian Chamois</h2>
+        <button onclick="toggleVisibility('cantabrian-chamois')" aria-expanded="false" aria-controls="cantabrian-chamois-details">View Details</button>
+        <div id="cantabrian-chamois-details">
+            <img src="endangered/europe/cantabrian-chamois.jpg" alt="Cantabrian Chamois" loading="lazy">
+            <p><strong>Scientific Name:</strong> Rupicapra pyrenaica parva</p>
+            <p><strong>Habitat:</strong> Mountainous regions and rocky slopes</p>
+            <p><strong>Current Population:</strong> Around 15,000 individuals</p>
+            <p><strong>Subregion:</strong> Cantabrian Mountains, Spain</p>
+            <p><strong>Cause of Endangerment:</strong> Habitat loss, overhunting, and competition with livestock</p>
+        </div>
+    </section>
+
+    <!-- European Eel -->
+    <section class="species-info" id="european-eel">
+        <h2>European Eel</h2>
+        <button onclick="toggleVisibility('european-eel')" aria-expanded="false" aria-controls="european-eel-details">View Details</button>
+        <div id="european-eel-details">
+            <img src="endangered/europe/european-eel.jpg" alt="European Eel" loading="lazy">
+            <p><strong>Scientific Name:</strong> Anguilla anguilla</p>
+            <p><strong>Habitat:</strong> Freshwater rivers, lakes, and coastal areas</p>
+            <p><strong>Current Population:</strong> Critically endangered, population declining</p>
+            <p><strong>Subregion:</strong> Europe, migrating to the Sargasso Sea</p>
+            <p><strong>Cause of Endangerment:</strong> Overfishing, habitat degradation, and barriers to migration</p>
+        </div>
+    </section>
+
+    <!-- Grey Wolves -->
+    <section class="species-info" id="grey-wolves">
+        <h2>Grey Wolves</h2>
+        <button onclick="toggleVisibility('grey-wolves')" aria-expanded="false" aria-controls="grey-wolves-details">View Details</button>
+        <div id="grey-wolves-details">
+            <img src="endangered/europe/grey-wolves.jpg" alt="Grey Wolves" loading="lazy">
+            <p><strong>Scientific Name:</strong> Canis lupus</p>
+            <p><strong>Habitat:</strong> Forests, tundra, and grasslands</p>
+            <p><strong>Current Population:</strong> Around 12,000 individuals</p>
+            <p><strong>Subregion:</strong> Eastern Europe, Russia</p>
+            <p><strong>Cause of Endangerment:</strong> Hunting, habitat fragmentation, and conflict with humans</p>
+        </div>
+    </section>
+
+    <!-- Marbled White Butterfly -->
+    <section class="species-info" id="marbled-white-butterfly">
+        <h2>Marbled White Butterfly</h2>
+        <button onclick="toggleVisibility('marbled-white-butterfly')" aria-expanded="false" aria-controls="marbled-white-butterfly-details">View Details</button>
+        <div id="marbled-white-butterfly-details">
+            <img src="endangered/europe/marbled-white-butterfly.jpg" alt="Marbled White Butterfly" loading="lazy">
+            <p><strong>Scientific Name:</strong> Melanargia galathea</p>
+            <p><strong>Habitat:</strong> Grasslands and meadows</p>
+            <p><strong>Current Population:</strong> Vulnerable, population declining</p>
+            <p><strong>Subregion:</strong> Central and Southern Europe</p>
+            <p><strong>Cause of Endangerment:</strong> Agricultural intensification, habitat loss, and climate change</p>
+        </div>
+    </section>
+
+<script>
+    function goBack() {
+        if (window.history.length > 1) {
+            window.history.back();
+        } else {
+            window.location.href = 'index.html';
+        }
+    }
+
+    function toggleVisibility(id) {
+        const section = document.getElementById(id);
+        const button = section.querySelector('button');
+        section.classList.toggle('active');
+        button.setAttribute('aria-expanded', section.classList.contains('active'));
+    }
+</script>
+<div style="margin: 20px;">
+    <button onclick="goBack()" style="padding: 10px 20px; background-color: #2f5d3a; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        ← Back
+    </button>
+</div>
+</body>
+
+</html>

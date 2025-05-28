@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Science of De-Extinction</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #263238;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    .back-button {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      background-color: #00796B;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+    h2 {
+      color: #00796B;
+    }
+    .faq {
+      margin-top: 20px;
+    }
+    .faq-item {
+      background: #e0f2f1;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .faq-question {
+      padding: 15px;
+      cursor: pointer;
+      background-color: #b2dfdb;
+      font-weight: bold;
+    }
+    .faq-answer {
+      padding: 15px;
+      display: none;
+    }
+    .timeline {
+      margin-top: 40px;
+    }
+    .step {
+      background: white;
+      border-left: 5px solid #00796B;
+      margin-bottom: 20px;
+      padding: 15px 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <button class="back-button" onclick="history.back()">← Back</button>
+  <h1>The Science of De-Extinction</h1>
+  <p>Can we really bring extinct animals back to life?</p>
+</header>
+
+<div class="container">
+
+  <section>
+    <h2>Introduction</h2>
+    <p>De-extinction is the process of reviving extinct species using advanced scientific techniques. It combines genetics, cloning, selective breeding, and biotechnology to bring back creatures that have disappeared from the Earth.</p>
+  </section>
+
+  <section class="faq">
+    <h2>FAQs</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">🔬 What is De-Extinction?</div>
+      <div class="faq-answer">
+        De-extinction involves recreating an extinct species through methods such as cloning, genome editing (e.g., CRISPR), and back-breeding from closely related species.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">🧬 How is DNA used?</div>
+      <div class="faq-answer">
+        Scientists extract DNA from preserved specimens (like frozen mammoths or dodo bones), repair the damaged sequences, and combine it with the DNA of a closely related species to recreate the extinct genome.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">🐘 Has any species been revived?</div>
+      <div class="faq-answer">
+        Not completely. The Pyrenean ibex was cloned in 2003 but died shortly after birth. Projects are underway to revive the woolly mammoth, passenger pigeon, and thylacine.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">🌍 What are the risks?</div>
+      <div class="faq-answer">
+        Risks include ecological imbalance, ethical concerns, disease transmission, and the possibility of re-extinction if the species can't adapt to the current environment.
+      </div>
+    </div>
+  </section>
+
+  <section class="timeline">
+    <h2>How De-Extinction Works: Step-by-Step</h2>
+
+    <div class="step">
+      <h3>1. DNA Collection</h3>
+      <p>Scientists retrieve ancient DNA from fossils, museum specimens, or frozen tissues.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Ancient_DNA_Extraction.jpg/640px-Ancient_DNA_Extraction.jpg" alt="DNA Collection">
+    </div>
+
+    <div class="step">
+      <h3>2. Genome Sequencing</h3>
+      <p>The DNA is sequenced and compared with the closest living relatives to identify missing or damaged parts.</p>
+    </div>
+
+    <div class="step">
+      <h3>3. Genetic Engineering</h3>
+      <p>Using tools like CRISPR, scientists edit the genome of a living species to match the extinct one.</p>
+    </div>
+
+    <div class="step">
+      <h3>4. Cloning or Embryo Implantation</h3>
+      <p>The engineered DNA is inserted into an egg cell and implanted in a surrogate mother for development.</p>
+    </div>
+
+    <div class="step">
+      <h3>5. Birth and Adaptation</h3>
+      <p>If successful, the animal is born and must be raised in a habitat suitable for its survival.</p>
+    </div>
+
+  </section>
+
+</div>
+
+<script>
+  const questions = document.querySelectorAll('.faq-question');
+  questions.forEach(q => {
+    q.addEventListener('click', () => {
+      const answer = q.nextElementSibling;
+      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
+</body>
+</html>
